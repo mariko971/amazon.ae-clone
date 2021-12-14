@@ -11,11 +11,6 @@
   height: 60px;
   background-color: var(--header-bg-main);
 }
-.header__nav-secondary {
-  width: 100vw;
-  height: 39px;
-  background-color: var(--header-bg-secondary);
-}
 
 .nav-main__logo {
   display: flex;
@@ -58,55 +53,6 @@
 #delivert-to-bottom {
   font-size: 14px;
   font-family: AmazonBold;
-}
-
-.nav-main__user {
-  display: flex;
-  justify-content: space-evenly;
-  color: #ffff;
-  font-family: AmazonReg Arial, Helvetica, sans-serif;
-  text-align: left;
-}
-.user__option {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-.language-option {
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-}
-.language-option img {
-  object-fit: contain;
-  width: 24px;
-  height: 20px;
-}
-.language-option .MuiSvgIcon-root {
-  display: flex;
-  font-size: 1.2rem;
-}
-.language-flag {
-  width: 50px;
-}
-.user__optionLineOne {
-  font-size: 12px;
-  letter-spacing: 0.25px;
-}
-.user__optionLineTwo {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.25px;
-}
-.user__optionBasket {
-  display: flex;
-  align-items: center;
-  color: #ffff;
-}
-.user__basketCount {
-  font-size: 1rem;
-  margin: 0 10px;
 }
 
 .nav-main__search {
@@ -186,4 +132,76 @@
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   background: #ee992b;
+}
+
+.nav-main__user {
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffff;
+  font-family: AmazonReg Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.user__option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  justify-content: center;
+  height: 40px;
+}
+
+.language-option {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.language-option img {
+  object-fit: contain;
+  width: 24px;
+  height: 20px;
+}
+.language-option .MuiSvgIcon-root {
+  display: flex;
+  font-size: 1.2rem;
+}
+.language-flag {
+  width: 50px;
+}
+.user__optionLineOne {
+  font-size: 12px;
+  letter-spacing: 0.25px;
+}
+.user__optionLineTwo {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+.user__optionBasket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  margin: 0 10px;
+}
+
+.optionBasket__cart-container {
+  background: url("./cart.svg") no-repeat center center;
+  background-size: contain;
+  width: 38px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-container__count {
+  font-size: 1rem;
+  margin-left: 6px;
+  margin-top: 1px;
+  color: #f08804;
+}
+
+.optionBasket-text {
+  font-size: 14px;
+  align-self: end;
+  margin-bottom: 4px;
+  margin-right: 5px;
 }

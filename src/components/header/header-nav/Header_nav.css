@@ -1,0 +1,61 @@
+.header-nav {
+  width: 100vw;
+  height: 39px;
+  background-color: var(--header-bg-secondary);
+  display: flex;
+  padding-left: 11px;
+}
+
+.header-nav__menu,
+.header-nav__links {
+  display: flex;
+  color: #ffff;
+  font-family: AmazonReg Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffff;
+  padding: 6px 9px;
+  letter-spacing: 0.25px;
+  margin: 5px 0 6px 0;
+}
+
+.prime {
+  display: flex;
+  align-items: center;
+}
+
+.prime .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+
+.menu-txt {
+  padding-left: 5px;
+}
+
+.header-nav__menu {
+  cursor: pointer;
+  padding: 6px 9px;
+  letter-spacing: 0.25px;
+  margin: 5px 0 6px 0;
+}
+
+.header-nav__benefits {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 38px;
+  overflow: hidden;
+}
+.header-nav__benefits:hover {
+  border: 1px solid #ffff;
+}
+
+.nav-link:hover,
+.header-nav__menu:hover {
+  border: 1px solid #ffff;
+  border-radius: 3px;
+}

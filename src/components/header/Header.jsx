@@ -1,8 +1,9 @@
 import React from "react";
 import "./Header.css";
+import HeaderNav from "./header-nav/Header_nav";
+
 import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 
 const Header = () => {
   return (
@@ -110,16 +111,14 @@ const Header = () => {
           </div>
 
           <div className="user__optionBasket">
-            <ShoppingCartOutlinedIcon />
-            <span className="user__optionLineTwo user__basketCount">0</span>
+            <div className="optionBasket__cart-container">
+              <strong className="cart-container__count">0</strong>
+            </div>
+            <strong className="optionBasket-text">Cart</strong>
           </div>
         </div>
       </div>
-      <div className="header__nav-secondary">
-        {/* hamburger menu */}
-        {/* category links */}
-        {/* Shopping benefits image link */}
-      </div>
+      <HeaderNav />
     </div>
   );
 };
