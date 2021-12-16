@@ -1,0 +1,53 @@
+.ad-info {
+  height: 100%;
+  padding: 0 20px;
+}
+
+.byFourAd-info__layout {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  column-gap: 15px;
+}
+.byFourAd-info__layout a {
+  color: #000;
+}
+
+.ad-info__title {
+  font-size: 21px;
+  line-height: 27.3px !important;
+  margin-bottom: 10px;
+}
+
+.sm-ad-image {
+  height: 102px;
+  width: 162px;
+}
+
+.sm-ad-image {
+  display: flex;
+  flex-direction: column;
+  width: 141px;
+  height: 115px;
+  background-color: red;
+  background-position: center;
+  background-size: cover;
+}
+
+.sm-ad-description {
+  font-size: 12px;
+}
+
+.ad-info__link {
+  margin-top: 20px;
+}
+
+.sm-ad-link {
+  margin: 0;
+}
+
+.ad-info__link a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
+}
