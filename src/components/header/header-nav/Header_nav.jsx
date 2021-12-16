@@ -11,39 +11,39 @@ export const Header_nav = () => {
       {/* hamburger menu */}
       <div className="header-nav__menu">
         <MenuIcon />
-        <p className="menu-txt">All</p>
+        <p className="menu-text">All</p>
       </div>
       {/* category links */}
       <div className="header-nav__links">
         <Link to="/">
-          <p className="nav-link">Sell</p>
+          <p className="header-nav-link">Sell</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Best Sellers</p>
+          <p className="header-nav-link">Best Sellers</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Today's Deals</p>
+          <p className="header-nav-link">Today's Deals</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Customer Service</p>
+          <p className="header-nav-link">Customer Service</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Mobile Phones</p>
+          <p className="header-nav-link">Mobile Phones</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Electronics</p>
+          <p className="header-nav-link">Electronics</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Fashion</p>
+          <p className="header-nav-link">Fashion</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">New Releases</p>
+          <p className="header-nav-link">New Releases</p>
         </Link>
         <Link to="/">
-          <p className="nav-link">Health & Personal Care</p>
+          <p className="header-nav-link">Health & Personal Care</p>
         </Link>
         <Link to="/">
-          <p className="nav-link prime">
+          <p className="header-nav-link prime">
             Prime <ArrowDropDown />
           </p>
         </Link>

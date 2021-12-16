@@ -1,5 +1,4 @@
 .header-nav {
-  width: 100vw;
   height: 39px;
   background-color: var(--header-bg-secondary);
   display: flex;
@@ -15,7 +14,7 @@
   align-items: center;
 }
 
-.nav-link {
+.header-nav-link {
   text-decoration: none;
   color: #ffff;
   padding: 6px 9px;
@@ -32,8 +31,9 @@
   font-size: 1rem;
 }
 
-.menu-txt {
+.menu-text {
   padding-left: 5px;
+  margin: 0;
 }
 
 .header-nav__menu {
@@ -54,7 +54,7 @@
   border: 1px solid #ffff;
 }
 
-.nav-link:hover,
+.header-nav-link:hover,
 .header-nav__menu:hover {
   border: 1px solid #ffff;
   border-radius: 3px;

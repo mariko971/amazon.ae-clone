@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   padding: 7px 10px;
-  width: 100vw;
   height: 60px;
   background-color: var(--header-bg-main);
 }
@@ -99,6 +98,7 @@
   left: 0;
   opacity: 0;
   height: 40px;
+  width: 100%;
 }
 
 .card-container {
@@ -120,6 +120,9 @@
   border: none;
   padding: 7px 10px 10px 0;
   outline: none;
+  text-indent: 8px;
+  font-size: 15px;
+  font-family: AmazonReg Arial, Helvetica, sans-serif;
 }
 
 .search-btn {
