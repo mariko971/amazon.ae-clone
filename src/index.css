@@ -12,3 +12,12 @@
   font-family: AmazonBold;
   src: url("./amazonember_bd-webfont.woff");
 }
+
+body {
+  background-color: rgb(234, 237, 237);
+  font-family: AmazonReg;
+}
+
+a {
+  text-decoration: none;
+}
