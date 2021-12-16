@@ -1,0 +1,19 @@
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: 50px;
+  height: 200px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 50px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background-color: #2f4f4f;
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #2f4f4f;
+}
