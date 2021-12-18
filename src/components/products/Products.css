@@ -2,12 +2,12 @@
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 20px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "row-1"
-    "row-1"
+    "row-2"
     "."
     "."
     "."

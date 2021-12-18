@@ -3,13 +3,15 @@ import "./Products.css";
 
 import AdOneByOne from "../ads/ad-1-1/AdOneByOne";
 import AdByFour from "../ads/ad-1-4/AdByFour";
+import ItemsSlider from "../slider multiple-items/ItemsSlider";
 import { ads_Data } from "../../DATA";
 
 const Products = () => {
+  const { promo, deals } = ads_Data;
   return (
     <div class="products-container">
       <div className="area1">
-        {ads_Data.map((ad) =>
+        {promo.map((ad) =>
           ad.type === "byOne" ? (
             <div className="ad-container">
               <AdOneByOne
@@ -29,6 +31,7 @@ const Products = () => {
           )
         )}
       </div>
+      <ItemsSlider deals={deals} />
     </div>
   );
 };
