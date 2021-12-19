@@ -157,120 +157,174 @@ export const ads_Data = {
       description: "Shop Now",
     },
   ],
-  deals: [
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/31PPYVehGpL._AC_SY200_.jpg",
-      priceRange: { from: 12.13, to: 1260.02 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/41UUWCEbZ+L._AC_SY200_.jpg",
-      priceRange: { from: 51.17, to: 93.21 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/41zSiyJyhxS._AC_SY200_.jpg",
-      priceRange: { from: 12.16, to: 903.52 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/51XryVKbLgL._AC_SY200_.jpg",
-      priceRange: { from: 18.03, to: 84.12 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/41-oeBD43QL._AC_SY200_.jpg",
-      priceRange: { from: 28.53, to: 7540.02 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/31pPPvB+4XS._AC_SY200_.jpg",
-      priceRange: { from: 3.13, to: 459.62 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/21U8FqVYf3L._AC_SY200_.jpg",
-      priceRange: { from: 29.58, to: 679.09 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/31YfSQPUQKS._AC_SY200_.jpg",
-      priceRange: { from: 532.45, to: 711.02 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/4174yXmzcuL._AC_SY200_.jpg",
-      priceRange: { from: 141.32, to: 333.42 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/31-F4phgClL._AC_SY200_.jpg",
-      priceRange: { from: 502.13, to: 1070.02 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/310P2f1p07L._AC_SY200_.jpg",
-      priceRange: { from: 137.73, to: 506.92 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/41KfT5KDAwS._AC_SY200_.jpg",
-      priceRange: { from: 69.0, to: 339.0 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/31XrIUF7I0L._AC_SY200_.jpg",
-      priceRange: { from: 143.0, to: 212.0 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/41Q8F3hJFQL._AC_SY200_.jpg",
-      priceRange: { from: 21.75, to: 12489.02 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/31NRAjl5JeL._AC_SY200_.jpg",
-      priceRange: { from: 238.0, to: null },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/3193tNFJW2L._AC_SY200_.jpg",
-      priceRange: { from: 12.0, to: 604.61 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/41Vio5oe0bS._AC_SY200_.jpg",
-      priceRange: { from: 6.96, to: 261.41 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/316O7CNGq9L._AC_SY200_.jpg",
-      priceRange: { from: 8.66, to: 620.93 },
-      currency: "AED",
-    },
-    {
-      imageUrl:
-        "https://m.media-amazon.com/images/I/51WroLx4gyL._AC_SY200_.jpg",
-      priceRange: { from: 17.5, to: 209.3 },
-      currency: "AED",
-    },
-  ],
+  deals: {
+    title: `Today's Deals`,
+    link: "See all deals",
+    collection: [
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/31PPYVehGpL._AC_SY200_.jpg",
+        priceRange: { from: 12.13, to: 1260.02 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/41UUWCEbZ+L._AC_SY200_.jpg",
+        priceRange: { from: 51.17, to: 93.21 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/41zSiyJyhxS._AC_SY200_.jpg",
+        priceRange: { from: 12.16, to: 903.52 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/51XryVKbLgL._AC_SY200_.jpg",
+        priceRange: { from: 18.03, to: 84.12 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/41-oeBD43QL._AC_SY200_.jpg",
+        priceRange: { from: 28.53, to: 7540.02 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/31pPPvB+4XS._AC_SY200_.jpg",
+        priceRange: { from: 3.13, to: 459.62 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/21U8FqVYf3L._AC_SY200_.jpg",
+        priceRange: { from: 29.58, to: 679.09 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/31YfSQPUQKS._AC_SY200_.jpg",
+        priceRange: { from: 532.45, to: 711.02 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/4174yXmzcuL._AC_SY200_.jpg",
+        priceRange: { from: 141.32, to: 333.42 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/31-F4phgClL._AC_SY200_.jpg",
+        priceRange: { from: 502.13, to: 1070.02 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/310P2f1p07L._AC_SY200_.jpg",
+        priceRange: { from: 137.73, to: 506.92 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/41KfT5KDAwS._AC_SY200_.jpg",
+        priceRange: { from: 69.0, to: 339.0 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/31XrIUF7I0L._AC_SY200_.jpg",
+        priceRange: { from: 143.0, to: 212.0 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/41Q8F3hJFQL._AC_SY200_.jpg",
+        priceRange: { from: 21.75, to: 12489.02 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/31NRAjl5JeL._AC_SY200_.jpg",
+        priceRange: { from: 238.0, to: null },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/3193tNFJW2L._AC_SY200_.jpg",
+        priceRange: { from: 12.0, to: 604.61 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/41Vio5oe0bS._AC_SY200_.jpg",
+        priceRange: { from: 6.96, to: 261.41 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/316O7CNGq9L._AC_SY200_.jpg",
+        priceRange: { from: 8.66, to: 620.93 },
+        currency: "AED",
+      },
+      {
+        imageUrl:
+          "https://m.media-amazon.com/images/I/51WroLx4gyL._AC_SY200_.jpg",
+        priceRange: { from: 17.5, to: 209.3 },
+        currency: "AED",
+      },
+    ],
+  },
+  holidayGuide: {
+    title: "Your Holiday Gift Guide is here",
+    link: "Explore more",
+    collection: [
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4366548_UAE_HGG21_AE_GW_Bubbler_Generic_EN_400x400_2X._CB650262111_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365603_UAE_HGG21_AE_GW_Bubbler_Electronics_Gift_Guide_EN_400x400_2X._CB652043844_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365609_UAE_HGG21_AE_GW_Bubbler_Home_Gift_Guide_EN_400x400_2X._CB652043867_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365614_UAE_HGG21_AE_GW_Bubbler_Beauty_Gift_Guide_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365619_UAE_HGG21_AE_GW_Bubbler_Gaming_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365620_UAE_HGG21_AE_GW_Bubbler_Sports_Outdoor_Guide_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365618_UAE_HGG21_AE_GW_Bubbler_Toy_Baby_Gift_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365610_UAE_HGG21_AE_GW_Bubbler_eGift_Cards_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365606_UAE_HGG21_AE_GW_Bubbler_Fashion_Gift_Guide_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365615_UAE_HGG21_AE_GW_Bubbler_Holiday_Sweet_Snacks_EN_400x400_2X._CB652043845_.jpg",
+      },
+      {
+        imageUrl:
+          "https://images-eu.ssl-images-amazon.com/images/G/39/Cross_Site_Events/Holiday_Gift_Guide_2021/Homepage/XCM_Manual_1396400_4365611_UAE_HGG21_AE_GW_Bubbler_Book_lovers_EN_400x400_2X._CB652043867_.jpg",
+      },
+    ],
+  },
 };
