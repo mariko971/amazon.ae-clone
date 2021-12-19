@@ -7,7 +7,7 @@ import ItemsSlider from "../slider multiple-items/ItemsSlider";
 import { ads_Data } from "../../DATA";
 
 const Products = () => {
-  const { promo, deals } = ads_Data;
+  const { promo, deals, holidayGuide } = ads_Data;
   return (
     <div class="products-container">
       <div className="area1">
@@ -32,6 +32,7 @@ const Products = () => {
         )}
       </div>
       <ItemsSlider deals={deals} />
+      <ItemsSlider deals={holidayGuide} />
     </div>
   );
 };
