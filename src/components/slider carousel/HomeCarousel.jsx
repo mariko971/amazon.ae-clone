@@ -1,7 +1,9 @@
 import React from "react";
 import "./HomeCarousel.css";
+import { ads_Data } from "../../DATA";
 
 const HomeCarousel = () => {
+  const { carouselUrls } = ads_Data;
   return (
     <div
       id="carouselExampleControls"
@@ -9,48 +11,17 @@ const HomeCarousel = () => {
       data-bs-ride="carousel"
     >
       <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img
-            src="/assets/carousel/holiday-gift-guide.jpg"
-            className="d-block w-100"
-            alt="gift guide"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="/assets/carousel/holiday-list.jpg"
-            className="d-block w-100"
-            alt="holiday list"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="/assets/carousel/holiday&beauty.jpg"
-            className="d-block w-100"
-            alt="holiday beauty"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="/assets/carousel/jewelry-accessories.jpg"
-            className="d-block w-100"
-            alt="jewelry"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="/assets/carousel/alexa-hello.jpg"
-            className="d-block w-100"
-            alt="jewelry"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="/assets/carousel/tablets.jpg"
-            className="d-block w-100"
-            alt="jewelry"
-          />
-        </div>
+        {carouselUrls.map((imageUrl, index) => {
+          const active = "active";
+          return (
+            <div
+              className={`carousel-item ${index === 0 ? active : ""}`}
+              key={index}
+            >
+              <img src={imageUrl} className="d-block w-100" alt="gift guide" />
+            </div>
+          );
+        })}
       </div>
       <button
         className="carousel-control-prev prev-btn"

@@ -1,18 +1,8 @@
 import React from "react";
 import "./ItemsSlider.css";
+import { scrollNext, scrollBack } from "../utils";
 
-const scrollNext = (scroll) => {
-  const wrapper = document.querySelector(".slides-wrapper");
-  console.log(wrapper.scrollWidth);
-  wrapper.scrollLeft += 1400;
-};
-
-const scrollBack = (scroll) => {
-  const wrapper = document.querySelector(".slides-wrapper");
-  wrapper.scrollLeft -= 1400;
-};
-
-const ItemsSlider = ({ deals }) => {
+const ItemsSlider = ({ deals, id }) => {
   const { title, link, collection } = deals;
   return (
     <div className="items-slider__container">
@@ -27,11 +17,11 @@ const ItemsSlider = ({ deals }) => {
         </div>
         <button
           className="items-slider__btn items-slider__btn--prev"
-          onClick={() => scrollBack()}
+          onClick={() => scrollBack(id)}
         >
           <span> &#10094;</span>
         </button>
-        <div className="slides-wrapper">
+        <div className={`slides-wrapper slider-${id}`}>
           {collection.map((deal, index) => (
             <a href="/" className="slides-wrapper__link" key={index}>
               <div className="slider-item">
@@ -47,7 +37,7 @@ const ItemsSlider = ({ deals }) => {
         </div>
         <button
           className="items-slider__btn items-slider__btn--next"
-          onClick={() => scrollNext()}
+          onClick={() => scrollNext(id)}
         >
           <span> &#10095;</span>
         </button>

@@ -1,4 +1,12 @@
 export const ads_Data = {
+  carouselUrls: [
+    "https://m.media-amazon.com/images/I/61J8-XaUX9L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71G9Gl+USDL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71h5lI-rMkL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/61cOvtmUfNL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/61icgRdyX2L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/61I2g+vA85L._SX3000_.jpg",
+  ],
   promo: [
     {
       type: "byOne",

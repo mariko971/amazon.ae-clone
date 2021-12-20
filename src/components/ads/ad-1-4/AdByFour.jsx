@@ -8,8 +8,8 @@ const AdByFour = ({ title, ads, description }) => {
         <strong>{title}</strong>
       </h2>
       <div className="byFourAd-info__layout">
-        {ads.map((ad) => (
-          <a href="/">
+        {ads.map((ad, index) => (
+          <a href="/" key={index}>
             <div className="sm-ad">
               <div
                 className="sm-ad-image"
