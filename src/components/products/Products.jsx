@@ -9,11 +9,11 @@ import { ads_Data } from "../../DATA";
 const Products = () => {
   const { promo, deals, holidayGuide } = ads_Data;
   return (
-    <div class="products-container">
+    <div className="products-container">
       <div className="area1">
-        {promo.map((ad) =>
+        {promo.map((ad, index) =>
           ad.type === "byOne" ? (
-            <div className="ad-container">
+            <div className="ad-container" key={index}>
               <AdOneByOne
                 title={ad.title}
                 imageUrl={ad.imageUrl}
@@ -21,7 +21,7 @@ const Products = () => {
               />
             </div>
           ) : (
-            <div className="ad-container">
+            <div className="ad-container" key={index}>
               <AdByFour
                 title={ad.title}
                 ads={ad.ads}
@@ -31,8 +31,8 @@ const Products = () => {
           )
         )}
       </div>
-      <ItemsSlider deals={deals} />
-      <ItemsSlider deals={holidayGuide} />
+      <ItemsSlider deals={deals} id={0} />
+      <ItemsSlider deals={holidayGuide} id={1} />
     </div>
   );
 };

@@ -7,7 +7,7 @@ import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="top-page">
       <div className="header__nav-main">
         {/* logo */}
         <div className="nav-main__logo">
@@ -33,7 +33,7 @@ const Header = () => {
         {/* Search */}
         <div className="nav-main__search">
           <div className="search">
-            <form action="" className="search-form">
+            <form action="submit" className="search-form">
               <div className="search-form__container">
                 <div className="search-form__card">
                   <div className="card-container">
@@ -41,9 +41,7 @@ const Header = () => {
                     <ArrowDropDownIcon className="card-dropdown" />
                   </div>
                   <select name="categories" id="categories">
-                    <option selected="selected" value="all">
-                      All Categories
-                    </option>
+                    <option defaultValue="all">All Categories</option>
                     <option value="amazon-devices">Amazon Devices</option>
                     <option value="fashion">Amazon Fashion</option>
                     <option value="amazon-global-store">
