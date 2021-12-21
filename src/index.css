@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: AmazonReg;
-  src: url("./amazonember_rg-webfont.woff2");
+  src: url("./App-fonts/amazonember_rg-webfont.woff2");
 }
 @font-face {
   font-family: AmazonBold;
-  src: url("./amazonember_bd-webfont.woff");
+  src: url("./App-fonts/amazonember_bd-webfont.woff");
 }
 
 body {
-  background-color: rgb(234, 237, 237);
+  background-color: #eaeded;
   font-family: AmazonReg;
 }
 

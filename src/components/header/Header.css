@@ -10,12 +10,20 @@
   height: 60px;
   background-color: var(--header-bg-main);
 }
+.header__nav-main a {
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.header__nav-main a:hover {
+  border: 1px solid #ffff;
+}
 
 .nav-main__logo {
   display: flex;
   color: #ffff;
   margin-top: 10px;
   font-family: AmazonBold;
+  padding: 3px;
 }
 
 .logo__img {
@@ -27,7 +35,9 @@
   display: flex;
   justify-content: center;
   color: #ffff;
-  margin-left: 1rem;
+  height: 50px;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .deliver-to {
@@ -144,6 +154,15 @@
   font-family: AmazonReg Arial, Helvetica, sans-serif;
   text-align: left;
 }
+
+.nav-main__user a {
+  color: #ffff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.nav-main__user a:hover {
+  border: 1px solid #ffff;
+}
 .user__option {
   display: flex;
   flex-direction: column;
@@ -154,7 +173,7 @@
 
 .language-option {
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 .language-option img {

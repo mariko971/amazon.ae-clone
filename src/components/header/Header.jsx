@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Header.css";
 import HeaderNav from "./header-nav/Header_nav";
 
@@ -10,26 +12,30 @@ const Header = () => {
     <div className="header" id="top-page">
       <div className="header__nav-main">
         {/* logo */}
-        <div className="nav-main__logo">
-          <img
-            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            alt="amazon logo"
-            className="logo__img"
-          />
-          <span className="dot-region">.ae</span>
-        </div>
-        {/* Deliver to */}
-        <div className="nav-main__location">
-          <img
-            src="assets/location2.svg"
-            alt="location pin"
-            className="location-pin"
-          />
-          <div className="deliver-to">
-            <span id="delivert-to-top">Deliver to</span>
-            <span id="delivert-to-bottom">United Arab Emirates</span>
+        <Link to={"/"}>
+          <div className="nav-main__logo">
+            <img
+              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt="amazon logo"
+              className="logo__img"
+            />
+            <span className="dot-region">.ae</span>
           </div>
-        </div>
+        </Link>
+        {/* Deliver to */}
+        <Link to={"/"}>
+          <div className="nav-main__location">
+            <img
+              src="assets/location2.svg"
+              alt="location pin"
+              className="location-pin"
+            />
+            <div className="deliver-to">
+              <span id="delivert-to-top">Deliver to</span>
+              <span id="delivert-to-bottom">United Arab Emirates</span>
+            </div>
+          </div>
+        </Link>
         {/* Search */}
         <div className="nav-main__search">
           <div className="search">
@@ -93,27 +99,34 @@ const Header = () => {
         {/* Returns & orders*/}
         {/* cart*/}
         <div className="nav-main__user">
-          <div className="user__option language-option">
-            <img src="/assets/UAE-Flag.svg" alt="" />
-            <span className="user__optionLineTwo">
-              <ArrowDropDownIcon />
-            </span>
-          </div>
-          <div className="user__option">
-            <span className="user__optionLineOne">Hello, Sign in</span>
-            <span className="user__optionLineTwo">Account & Lists</span>
-          </div>
-          <div className="user__option">
-            <span className="user__optionLineOne">Returns</span>
-            <span className="user__optionLineTwo">& Orders</span>
-          </div>
-
-          <div className="user__optionBasket">
-            <div className="optionBasket__cart-container">
-              <strong className="cart-container__count">0</strong>
+          <Link to={"/"}>
+            <div className="user__option language-option">
+              <img src="/assets/UAE-Flag.svg" alt="" />
+              <span className="user__optionLineTwo">
+                <ArrowDropDownIcon />
+              </span>
             </div>
-            <strong className="optionBasket-text">Cart</strong>
-          </div>
+          </Link>
+          <Link to={"/sign-in"}>
+            <div className="user__option">
+              <span className="user__optionLineOne">Hello, Sign in</span>
+              <span className="user__optionLineTwo">Account & Lists</span>
+            </div>
+          </Link>
+          <Link to={"/"}>
+            <div className="user__option">
+              <span className="user__optionLineOne">Returns</span>
+              <span className="user__optionLineTwo">& Orders</span>
+            </div>
+          </Link>
+          <Link to={"/cart"}>
+            <div className="user__optionBasket">
+              <div className="optionBasket__cart-container">
+                <strong className="cart-container__count">0</strong>
+              </div>
+              <strong className="optionBasket-text">Cart</strong>
+            </div>
+          </Link>
         </div>
       </div>
       <HeaderNav />
