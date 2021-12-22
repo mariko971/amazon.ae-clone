@@ -22,12 +22,18 @@ const Cart = () => {
                 <p>Your Amazon basket is empty</p>
                 <a href="!#">Shop today's deals</a>
                 <div className="cart-empty__btns">
-                  <Link to={"/sign-in"}>
-                    <button className="cart-signIn-btn">
-                      Sign in to your account
-                    </button>
+                  <Link to={"/sign-in"} className="signIn">
+                    <>
+                      <button className="cart-signIn-btn">
+                        Sign in to your account
+                      </button>
+                    </>
                   </Link>
-                  <button className="cart-signUp-btn">Sign up now</button>
+                  <Link to={"/sign-up"} className="signUp">
+                    <>
+                      <button className="cart-signUp-btn">Sign up now</button>
+                    </>
+                  </Link>
                 </div>
               </div>
             </div>

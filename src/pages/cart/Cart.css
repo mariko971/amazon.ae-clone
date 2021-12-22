@@ -54,6 +54,14 @@
   padding: 0 10px;
   font-size: 16px;
 }
+
+.signUp {
+  margin-left: auto;
+}
+
+.cart-empty__btns a {
+  width: auto;
+}
 .cart-signIn-btn {
   background: #ffd814;
   border: 1px solid #fcd200;
@@ -65,7 +73,7 @@
 .cart-signUp-btn {
   background: #fff;
   border: 1px solid #ddd;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .cart-signUp-btn:hover {
   background: #d6d6d6;

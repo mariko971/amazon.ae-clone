@@ -35,3 +35,12 @@
 .signIn-wrapper span {
   margin-left: 10px;
 }
+
+.start-here a {
+  color: #007185;
+}
+
+.start-here a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}

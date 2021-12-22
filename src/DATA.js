@@ -6,6 +6,8 @@ export const ads_Data = {
     "https://m.media-amazon.com/images/I/61cOvtmUfNL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61icgRdyX2L._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61I2g+vA85L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71Xjnc4VjqL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/61fEfctu9zL._SX3000_.jpg",
   ],
   promo: [
     {
