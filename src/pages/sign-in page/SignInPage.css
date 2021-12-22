@@ -32,7 +32,7 @@ form {
   width: 100%;
 }
 
-form p {
+.input-label {
   font-size: 13px;
   font-weight: bold;
   width: 100%;
@@ -114,4 +114,9 @@ form p {
 
 .signIn-copyright-section p {
   margin-top: 10px;
+}
+
+.form-input:focus {
+  border: 1px solid #ff9100;
+  box-shadow: 0 0 7px #ff9100;
 }

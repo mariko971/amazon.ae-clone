@@ -16,7 +16,13 @@ const SignInPage = () => {
           <p className="form-title">Sign-In</p>
           <form action="">
             <p className="input-label">Email or mobile phone number</p>
-            <input type="email" name="email" className="form-input" />
+            <input
+              type="email"
+              name="email"
+              className="form-input"
+              autoFocus
+              // ref={emailInputRef}
+            />
           </form>
           <button type="submit" className="submit-btn">
             Continue
