@@ -18,7 +18,7 @@ export const Header_nav = () => {
         {/* <Link to="/">
           <p className="header-nav-link">Sell</p>
         </Link> */}
-        <Link to="/">
+        <Link to="/shop">
           <p className="header-nav-link">Best Sellers</p>
         </Link>
         <Link to="/">

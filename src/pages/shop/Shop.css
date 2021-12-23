@@ -1,0 +1,47 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #fff;
+  padding: 0 8px;
+}
+
+.shop_header {
+  margin-top: 10px;
+}
+.shop_header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.25px;
+}
+.shop_header p {
+  font-size: 12px;
+  color: #666;
+}
+
+.shop_main {
+  display: flex;
+}
+
+.shop-main-main {
+  width: 100%;
+}
+
+.shop_main-aside {
+  border-right: 1px solid #ddd;
+  font-size: 14px;
+  margin-left: 9px;
+  width: 195px;
+}
+
+.aside-header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.aside-list {
+  list-style: none;
+  margin-left: 9px;
+  padding: 0;
+}
