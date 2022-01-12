@@ -1,0 +1,173 @@
+.shopItemInfo-container {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.shopItemInfo_header {
+  padding-bottom: 20px;
+}
+
+.shopItemInfo_product-image,
+.shopItemInfo_product {
+  display: flex;
+}
+
+.shopItemInfo_product {
+  justify-content: center;
+}
+
+/* .shopItemInfo_product-image {
+  align-items: center;
+} */
+
+.product_image-thumbnails {
+  padding-left: 1rem;
+}
+.product_image-thumbnail {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 0.2px #2b2b2b;
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.product_image-thumbnail:hover {
+  border: 1px solid #ff9100;
+  box-shadow: 0 0 7px #ff9100;
+}
+
+.product_image-thumbnails-big {
+  width: 490px;
+  min-width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 2rem;
+}
+.shopItemInfo_product-details {
+  max-width: 638px;
+  padding: 10px 20px;
+}
+
+.shopItemInfo_product-description {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 0.3rem;
+}
+
+.shopItemInfo_product-rating {
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shopItemInfo_product-info {
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 13px;
+  border-top: solid #d5d9d9 1px;
+}
+
+.product-info-table {
+  width: 70%;
+}
+.product-info-table td {
+  padding: 4px 0;
+}
+
+.product-info_title {
+  font-family: AmazonBold;
+}
+
+.product_options-wrapper {
+  width: 244px;
+  /* height: 507px; */
+  border: 1px #d5d9d9 solid;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.product_options-wrapper #quantity {
+  font-family: AmazonReg;
+  font-size: 14px;
+}
+
+.product_options-wrapper label {
+  margin: 1rem 0.5rem 1rem 0;
+}
+
+.product_options-price {
+  display: flex;
+  font-size: 28px;
+  /* align-items: flex-start; */
+}
+.product_options-txt {
+  color: #565959;
+  margin-bottom: 0;
+}
+
+.product_options-price .currencySymbol {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.product_options-price .priceFraction {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* .priceValue {
+  font-family: AmazonBold;
+} */
+
+.product_options-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_options-btn {
+  width: 204px;
+  height: 29px;
+  border-radius: 19px;
+  border: none;
+  font-size: 13px;
+  margin-bottom: 0.8rem;
+}
+
+.product_options-btn {
+  width: 204px;
+  height: 29px;
+  border-radius: 19px;
+  border: none;
+  font-size: 13px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 2px 5px 0 rgba(212, 216, 216, 0.502);
+}
+
+.buyNow-btn {
+  background: #ffa41c;
+  border: solid 1px #ff8f00;
+}
+
+.buyNow-btn:hover {
+  background: #e48900;
+  border: solid 1px #e28101;
+}
+
+.addToCart-btn {
+  background: #ffd814;
+  border: solid 1px #fcd200;
+}
+.addToCart-btn:hover {
+  background: #e9c201;
+  border: solid 1px #e0bb01;
+}
+/* 565959 */

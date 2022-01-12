@@ -1,21 +1,16 @@
 import React from "react";
-import "./Shop.css";
+import "./ShopBestSellers.css";
 
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import ShopSlider from "../../components/shop slider/ShopSlider";
-import { shopData } from "../../shopData";
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/footer/Footer";
+import ShopSlider from "../../../components/shop slider/ShopSlider";
+import { shopData } from "../../../shopData";
 
-const Shop = () => {
-  console.log(shopData);
+const ShopBestSellers = () => {
   return (
     <>
       <Header />
       <div className="shop">
-        <div className="shop_header">
-          <h1>Amazon Best Sellers</h1>
-          <p>Our most popular products based on sales. Updated hourly</p>
-        </div>
         <div className="shop_main">
           <div className="shop_main-aside">
             <h4 className="aside-header">Any Department</h4>
@@ -31,10 +26,11 @@ const Shop = () => {
             </ul>
           </div>
           <div className="shop-main-main">
+            <div className="shop_header">
+              <h1>Amazon Best Sellers</h1>
+            </div>
             {shopData.map((cat, index) => (
-              <>
-                <ShopSlider categoryData={cat} key={index} />
-              </>
+              <ShopSlider categoryData={cat} key={index} />
             ))}
           </div>
         </div>
@@ -44,4 +40,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopBestSellers;

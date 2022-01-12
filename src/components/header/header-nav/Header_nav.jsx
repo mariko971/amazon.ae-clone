@@ -3,7 +3,6 @@ import "./Header_nav.css";
 import { Link } from "react-router-dom";
 
 import MenuIcon from "@material-ui/icons/Menu";
-// import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 
 export const Header_nav = () => {
   return (
@@ -15,38 +14,33 @@ export const Header_nav = () => {
       </div>
       {/* category links */}
       <div className="header-nav__links">
-        {/* <Link to="/">
-          <p className="header-nav-link">Sell</p>
-        </Link> */}
-        <Link to="/shop">
+        <Link to="/best-sellers">
           <p className="header-nav-link">Best Sellers</p>
         </Link>
-        <Link to="/">
-          <p className="header-nav-link">Today's Deals</p>
-        </Link>
-        {/* <Link to="/">
-          <p className="header-nav-link">Customer Service</p>
-        </Link> */}
-        <Link to="/">
+        <Link to="/Mobile Phones">
           <p className="header-nav-link">Mobile Phones</p>
         </Link>
-        <Link to="/">
-          <p className="header-nav-link">Electronics</p>
+        <Link to="/Tablets">
+          <p className="header-nav-link">Tablets</p>
         </Link>
-        <Link to="/">
+        <Link to="/Fashion">
           <p className="header-nav-link">Fashion</p>
         </Link>
-        {/* <Link to="/">
-          <p className="header-nav-link">New Releases</p>
-        </Link> */}
-        <Link to="/">
+        <Link to="/Laptops">
+          <p className="header-nav-link">Laptops</p>
+        </Link>
+        <Link to="/Tvs">
+          <p className="header-nav-link">Tvs</p>
+        </Link>
+        <Link to="/Speakers">
+          <p className="header-nav-link">Speakers</p>
+        </Link>
+        <Link to="/Headphones">
+          <p className="header-nav-link">Headphones</p>
+        </Link>
+        <Link to="/Health & Personal Care">
           <p className="header-nav-link">Health & Personal Care</p>
         </Link>
-        {/* <Link to="/">
-          <p className="header-nav-link prime">
-            Prime <ArrowDropDown />
-          </p>
-        </Link> */}
       </div>
       {/* Shopping benefits image link */}
       <Link to={"/"} className="header-nav__benefits">

@@ -48,42 +48,16 @@ const Header = () => {
                   </div>
                   <select name="categories" id="categories">
                     <option defaultValue="all">All Categories</option>
-                    <option value="amazon-devices">Amazon Devices</option>
-                    <option value="fashion">Amazon Fashion</option>
-                    <option value="amazon-global-store">
-                      Amazon Global Store
+                    <option value="Mobile Phones">Mobile Phones</option>
+                    <option value="Fashion">Amazon Fashion</option>
+                    <option value="Laptops">Laptops</option>
+                    <option value="Headphones">Headphones</option>
+                    <option value="Speakers">Speakers</option>
+                    <option value="Tvs">Tvs</option>
+                    <option value="Health & Personal Care">
+                      Health & Personal Care
                     </option>
-                    <option value="warehouse-deals">Amazon Warehouse</option>
-                    <option value="appliances">Appliances</option>
-                    <option value="automotive">
-                      Automotive Parts & Accessories
-                    </option>
-                    <option value="baby">Baby</option>
-                    <option value="beauty">Beauty & Personal Care</option>
-                    <option value="stripbooks">Books</option>
-                    <option value="computers">Computer & Accessories</option>
-                    <option value="electronics">Electronics</option>
-                    <option value="gift-cards">Gift Cards</option>
-                    <option value="grocery">Grocery & Gourmet Food</option>
-                    <option value="health-household-baby">
-                      Health, Household & Baby Care
-                    </option>
-                    <option value="services">Home & Business Services</option>
-                    <option value="home-garden">Home & Garden</option>
-                    <option value="kitchen">Kitchen & Dining</option>
-                    <option value="fashion-luggage">
-                      Luggage & Travel Gear
-                    </option>
-                    <option value="music-instruments">
-                      Musical Instruments
-                    </option>
-                    <option value="office-products">Office Products</option>
-                    <option value="pets">Pet Supplies</option>
-                    <option value="prime-video">Prime Video</option>
-                    <option value="sports">Sports</option>
-                    <option value="tools">Tools & Home Improvement</option>
-                    <option value="toys">Toys & Games</option>
-                    <option value="videogames">Video Games</option>
+                    <option value="Gaming">Gaming</option>
                   </select>
                 </div>
                 <input type="text" className="search-input" />

@@ -1,0 +1,109 @@
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #fff;
+  padding: 0 8px;
+}
+
+.shop-category_main {
+  display: flex;
+}
+
+.shop-category_aside {
+  border-right: 1px solid #ddd;
+  font-size: 14px;
+  margin-left: 9px;
+  margin-top: 50px;
+  width: 230px;
+  padding-left: 10px;
+}
+
+.shop_aside-header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.shop_aside-list {
+  list-style: none;
+  margin-left: 9px;
+  padding: 0;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, auto));
+  row-gap: 10px;
+}
+
+.category-item {
+  width: 320px;
+  justify-self: center;
+}
+
+.category-item:not(:last-child) {
+  border-bottom: solid 1px #ccc;
+}
+
+.category-item-img {
+  width: 308px;
+  height: 308px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.category-item-description {
+  margin: 16px 0 0 0;
+  color: #0f1111;
+}
+.category-item-rating {
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  margin: 7px 0;
+}
+
+.category-item-price {
+  font-family: AmazonBold;
+}
+
+.aside-review-filter {
+  padding: 0;
+}
+
+.review-filter {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.review-filter img {
+  height: 16px;
+}
+.review-filter span {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.shop-main-main {
+  width: 100%;
+}
+
+.shop_header {
+  margin: 10px 0 10px 0;
+  padding-left: 20px;
+  background: #eeeeee;
+}
+.shop_header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.25px;
+}
+.shop_header p {
+  font-size: 12px;
+  color: #666;
+}

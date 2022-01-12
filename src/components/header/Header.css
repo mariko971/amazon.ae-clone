@@ -212,12 +212,13 @@
   height: 39px;
   display: flex;
   justify-content: center;
+  margin-top: 3px;
 }
 
 .cart-container__count {
   font-size: 1rem;
   margin-left: 6px;
-  margin-top: 1px;
+  margin-top: -2px;
   color: #f08804;
 }
 

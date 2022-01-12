@@ -2,18 +2,23 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./ShopSlider.css";
-import StarOutlinedIcon from "@material-ui/icons/StarOutlined";
+import { starRate } from "../utils";
 
 const ShopSlider = ({ categoryData }) => {
   const { category, data } = categoryData;
-  console.log(categoryData);
+  const slicedData = data.slice(0, 8);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(4);
-
   const indexOfLastProduct = currentPage * postsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - postsPerPage;
-  const currentProducts = data.slice(indexOfFirstProduct, indexOfLastProduct);
-  const totalPages = data.length / postsPerPage;
+  const currentProducts = slicedData.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+  console.log(currentProducts);
+
+  const totalPages = Math.ceil(slicedData.length / postsPerPage);
+
   return (
     <div className="shop_main-products">
       <div className="main-products_header">
@@ -35,17 +40,17 @@ const ShopSlider = ({ categoryData }) => {
         <ul className="products-slide-track">
           {currentProducts.map((item, index) => (
             <li className="slide-item" key={index}>
-              <img src={item.imageUrl} alt="product" />
+              <div
+                className="slide-item-img"
+                style={{ backgroundImage: `url(${item.imageUrl})` }}
+              ></div>
               <a href="/" className="slide-item-description">
-                {item.productName}
+                {item.productDescription}
               </a>
-              <div className="slide-item-rating">
-                <StarOutlinedIcon id="star-icon" />
-                <StarOutlinedIcon id="star-icon" />
-                <StarOutlinedIcon id="star-icon" />
-                <StarOutlinedIcon id="star-icon" />
-                <StarOutlinedIcon id="star-icon" />
-              </div>
+              <div
+                className="slide-item-rating"
+                style={{ backgroundImage: `url(${starRate(item.rating)})` }}
+              ></div>
               <p className="slide-item-price">
                 {item.currency} {item.price}
               </p>

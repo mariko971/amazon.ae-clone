@@ -1,13 +1,14 @@
 import React from "react";
 import "./Products.css";
+import { useSelector } from "react-redux";
 
 import AdOneByOne from "../ads/ad-1-1/AdOneByOne";
 import AdByFour from "../ads/ad-1-4/AdByFour";
 import ItemsSlider from "../slider multiple-items/ItemsSlider";
-import { ads_Data } from "../../DATA";
 
 const Products = () => {
-  const { promo, deals, holidayGuide } = ads_Data;
+  const homeData = useSelector((state) => state.home);
+  const { promo, deals, holidayGuide } = homeData.ads_Data;
   return (
     <div className="products-container">
       <div className="area1">
