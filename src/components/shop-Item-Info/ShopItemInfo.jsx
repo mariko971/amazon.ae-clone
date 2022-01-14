@@ -3,11 +3,13 @@ import "./ShopItemInfo.css";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
 import { formatter } from "../shopItem/ShopItem";
 import { starRate } from "../utils";
-import { addToCart } from "../../slices/appSlices";
+import {
+  addToCart,
+  totalCartAmount,
+  totalCartQty,
+} from "../../slices/appSlices";
 
 const ShopItemInfo = () => {
   const { category, productID } = useParams();
@@ -39,6 +41,8 @@ const ShopItemInfo = () => {
       totalAmount: price * qtyValue,
     };
     dispatch(addToCart(cartItem));
+    dispatch(totalCartQty());
+    dispatch(totalCartAmount());
   };
 
   const price = formatter.format(product.price);
@@ -56,7 +60,7 @@ const ShopItemInfo = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="shopItemInfo-container">
         <header className="shopItemInfo_header">
           <img
@@ -139,7 +143,7 @@ const ShopItemInfo = () => {
           </div>
         </section>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

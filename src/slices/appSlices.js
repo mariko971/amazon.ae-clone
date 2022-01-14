@@ -69,6 +69,7 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState: {
     totalCartAmount: 0,
+    totalCartQuantity: 0,
     cartItems: [],
   },
   reducers: {
@@ -107,7 +108,15 @@ export const cartSlice = createSlice({
       const totalsArr = state.cartItems.map((item) => item.totalAmount);
       state.totalCartAmount = totalsArr.reduce((prev, curr) => prev + curr);
     },
+    totalCartQty: (state) => {
+      const totalsArr = state.cartItems.map((item) => item.qty);
+      state.totalCartQuantity = totalsArr.reduce(
+        (prev, curr) => prev + curr,
+        0
+      );
+    },
   },
 });
 
-export const { addToCart, removeFromCart, totalCartAmount } = cartSlice.actions;
+export const { addToCart, removeFromCart, totalCartAmount, totalCartQty } =
+  cartSlice.actions;

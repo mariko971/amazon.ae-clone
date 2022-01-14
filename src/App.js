@@ -36,7 +36,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home currentUser={currentUser} />} />
+        <Route
+          path="/"
+          element={<MasterPage ChildPage={Home} currentUser={currentUser} />}
+        />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route
