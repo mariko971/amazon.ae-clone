@@ -1,15 +1,13 @@
 import React from "react";
 import "./ShopBestSellers.css";
 
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/footer/Footer";
 import ShopSlider from "../../../components/shop slider/ShopSlider";
 import { shopData } from "../../../shopData";
 
 const ShopBestSellers = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="shop">
         <div className="shop_main">
           <div className="shop_main-aside">
@@ -35,7 +33,7 @@ const ShopBestSellers = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

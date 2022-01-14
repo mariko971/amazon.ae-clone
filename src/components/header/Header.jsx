@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import "./Header.css";
 import HeaderNav from "./header-nav/Header_nav";
 
 import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import { userSignOut } from "../../firebase/firebase.utils";
 
-const Header = () => {
+const Header = ({ currentUser }) => {
+  const cartItemsQty = useSelector((state) => state.cart.totalCartQuantity);
+  console.log(cartItemsQty);
   return (
     <div className="header" id="top-page">
       <div className="header__nav-main">
@@ -81,10 +85,17 @@ const Header = () => {
               </span>
             </div>
           </Link>
-          <Link to={"/sign-in"}>
+          <Link
+            to={currentUser ? "/" : "/sign-in"}
+            onClick={currentUser ? userSignOut : null}
+          >
             <div className="user__option">
-              <span className="user__optionLineOne">Hello, Sign in</span>
-              <span className="user__optionLineTwo">Account & Lists</span>
+              <span className="user__optionLineOne">
+                Hello{currentUser ? `, ${currentUser.displayName}` : ""}
+              </span>
+              <span className="user__optionLineTwo">
+                {currentUser ? `Sign Out` : `Sign In`}
+              </span>
             </div>
           </Link>
           <Link to={"/"}>
@@ -96,7 +107,9 @@ const Header = () => {
           <Link to={"/cart"}>
             <div className="user__optionBasket">
               <div className="optionBasket__cart-container">
-                <strong className="cart-container__count">0</strong>
+                <strong className="cart-container__count">
+                  {cartItemsQty}
+                </strong>
               </div>
               <strong className="optionBasket-text">Cart</strong>
             </div>

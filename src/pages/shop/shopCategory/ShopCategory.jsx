@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./ShopCategory.css";
 
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/footer/Footer";
 import { filteredData } from "../../../components/utils";
 import { resetFilters } from "../../../slices/appSlices";
 import CategoryPage from "./CategoryPage";
@@ -18,8 +16,6 @@ const ShopCategory = ({ params }) => {
     (item) => item.category === category
   )[0].data;
   const dat = filteredData(categoryArray, filters);
-  // console.log(dat);
-  // const handleFilterChange = () => setCategoryNow(dat);
 
   useEffect(() => {
     console.log("USE EFFECT RAN");
@@ -28,9 +24,9 @@ const ShopCategory = ({ params }) => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <CategoryPage categoryArray={categoryArray} params={params} dat={dat} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
