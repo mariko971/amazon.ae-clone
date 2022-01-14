@@ -1,8 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignInPage.css";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../firebase/firebase.utils";
 
 const SignInPage = () => {
+  // form control
+  const [formState, setFormState] = useState({
+    email: "",
+    password: "",
+  });
+  // form state handle input change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+  };
+
+  const navigate = useNavigate();
+  // Sign in with firebase authentication
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { email, password } = formState;
+    console.log(password);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((cred) => {
+        console.log("Signed in successfully", cred.user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <>
       <div className="signIn__header">
@@ -14,19 +42,29 @@ const SignInPage = () => {
         </Link>
         <div className="signIn__form-container">
           <p className="form-title">Sign-In</p>
-          <form action="">
-            <p className="input-label">Email or mobile phone number</p>
+          <form className="signIn-form" onSubmit={handleSubmit}>
+            <p className="input-label">Your Email</p>
             <input
               type="email"
               name="email"
-              className="form-input"
+              className="form-input email-input"
+              value={formState.email}
+              onChange={handleChange}
               autoFocus
-              // ref={emailInputRef}
             />
+            <p className="input-label">Your Password</p>
+            <input
+              type="password"
+              name="password"
+              className="form-input password-input"
+              value={formState.password}
+              onChange={handleChange}
+            />
+            <button type="submit" className="submit-btn">
+              Continue
+            </button>
           </form>
-          <button type="submit" className="submit-btn">
-            Continue
-          </button>
+
           <p className="form-footer-txt">
             By signing in, you agree to Amazon's{" "}
             <span>
@@ -43,7 +81,9 @@ const SignInPage = () => {
         </div>
         <div className="form-wrapper-footer">
           <p className="new-to-amazon">New to Amazon?</p>
-          <button className="footer-btn">Create Your Amazon account</button>
+          <Link to={"/sign-up"}>
+            <button className="footer-btn">Create Your Amazon account</button>
+          </Link>
         </div>
       </div>
       <div className="signIn-copyright-section">

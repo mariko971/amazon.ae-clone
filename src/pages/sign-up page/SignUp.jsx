@@ -1,18 +1,37 @@
-import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, createCustomerProfile } from "../../firebase/firebase.utils";
+
 const SignUp = () => {
-  //   const emailInputRef = React.useRef(null);
+  const [formState, setFormState] = useState({
+    displayName: "",
+    email: "",
+    password: "",
+  });
 
-  // React.useEffect(()=>{
-  //   emailInputRef.current.focus();
-  // }, []);
-  const nameInputRef = useRef(null);
+  const { displayName, email, password } = formState;
 
-  useEffect(() => {
-    nameInputRef.current.focus();
-  }, []);
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((cred) => {
+        createCustomerProfile(cred.user, { displayName });
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
 
   return (
     <>
@@ -25,20 +44,20 @@ const SignUp = () => {
         </Link>
         <div className="signUp__form-container">
           <p className="form-title">Create Account</p>
-          <form action="">
+          <form id="signUp-form" onSubmit={handleSubmit}>
             {/* CUSTOMER NAME */}
-            <label
-              htmlFor="customer-name"
-              className="signUp-input-label"
-              ref={nameInputRef}
-            >
+            <label htmlFor="customer-name" className="signUp-input-label">
               Your Name
             </label>
             <input
               type="text"
-              name="name"
+              name="displayName"
+              value={displayName}
+              required
               className="signUp-form-input"
               id="customer-name"
+              autoFocus
+              onChange={handleChange}
             />
             {/* CUSTOMER EMAIL */}
             <label htmlFor="customer-email" className="signUp-input-label">
@@ -47,8 +66,11 @@ const SignUp = () => {
             <input
               type="email"
               name="email"
+              value={email}
+              required
               className="signUp-form-input"
               id="customer-email"
+              onChange={handleChange}
             />
             {/* PASSWORD */}
             <label htmlFor="customer-password" className="signUp-input-label">
@@ -57,16 +79,18 @@ const SignUp = () => {
             <input
               type="password"
               name="password"
+              value={password}
+              required
               className="signUp-form-input"
               id="customer-password"
+              onChange={handleChange}
             />
             <p className="signUp-txt">Passwords must be atleast 6 characters</p>
             <p className="signUp-txt">
-              By enrolling a mobile phone number, you consent to receiving
-              automated security notifications via text message from Amazon. You
-              can opt out by removing your mobile number on the Login & Security
-              page located in Your Account settings. Message and data rates may
-              apply.
+              By enrolling your email, you consent to receiving automated
+              security notifications via text message. You can opt out by
+              removing your email on the Login & Security page located in Your
+              Account settings. Message and data rates may apply.
             </p>
             <button type="submit" className="submit-btn">
               Create your Account
