@@ -3,12 +3,13 @@ import "./ShopItemInfo.css";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import { formatter } from "../shopItem/ShopItem";
+import { formatter } from "../utils";
 import { starRate } from "../utils";
 import {
   addToCart,
   totalCartAmount,
   totalCartQty,
+  totalCartItemAmount,
 } from "../../slices/appSlices";
 
 const ShopItemInfo = () => {
@@ -38,10 +39,11 @@ const ShopItemInfo = () => {
       productDescription,
       price,
       qty: qtyValue,
-      totalAmount: price * qtyValue,
+      totalAmount: 0,
     };
     dispatch(addToCart(cartItem));
     dispatch(totalCartQty());
+    dispatch(totalCartItemAmount());
     dispatch(totalCartAmount());
   };
 

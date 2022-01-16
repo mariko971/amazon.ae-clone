@@ -11,7 +11,6 @@ import { userSignOut } from "../../firebase/firebase.utils";
 
 const Header = ({ currentUser }) => {
   const cartItemsQty = useSelector((state) => state.cart.totalCartQuantity);
-  console.log(cartItemsQty);
   return (
     <div className="header" id="top-page">
       <div className="header__nav-main">
@@ -43,7 +42,7 @@ const Header = ({ currentUser }) => {
         {/* Search */}
         <div className="nav-main__search">
           <div className="search">
-            <form action="submit" className="search-form">
+            <form className="search-form">
               <div className="search-form__container">
                 <div className="search-form__card">
                   <div className="card-container">

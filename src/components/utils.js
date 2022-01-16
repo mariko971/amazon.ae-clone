@@ -58,6 +58,17 @@ export const filteredData = (data, filtersObj) => {
         }
     }
   });
-  console.log(newData);
   return newData;
 };
+
+export const formatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "AED",
+  minimumFractionDigits: 2,
+});
+
+export function truncate(str) {
+  return str.split(" ").length > 28
+    ? str.split(" ").slice(0, 28).join(" ") + "..."
+    : str;
+}

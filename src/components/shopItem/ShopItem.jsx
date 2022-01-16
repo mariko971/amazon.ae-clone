@@ -3,15 +3,9 @@ import "./ShopItem.css";
 import { Link } from "react-router-dom";
 
 import { starRate } from "../utils";
-
-export const formatter = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "AED",
-  minimumFractionDigits: 2,
-});
+import { formatter } from "../utils";
 
 const ShopItem = ({ category, item, i }) => {
-  console.log(formatter);
   return (
     <div className="category-item" key={i}>
       <Link to={item.productID}>
