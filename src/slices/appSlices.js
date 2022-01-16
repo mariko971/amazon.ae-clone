@@ -70,7 +70,9 @@ export const cartSlice = createSlice({
   initialState: {
     totalCartAmount: 0,
     totalCartQuantity: 0,
+    totalBuyCartQty: 0,
     cartItems: [],
+    buyCartItems: [],
   },
   reducers: {
     addToCart: (state, action) => {
@@ -99,14 +101,22 @@ export const cartSlice = createSlice({
       }
     },
     removeFromCart: (state, action) => {
-      const newCart = state.cartItems.filter(
+      state.cartItems = state.cartItems.filter(
         (product) => product.productID !== action.payload
       );
-      return newCart;
     },
     totalCartAmount: (state) => {
-      const totalsArr = state.cartItems.map((item) => item.totalAmount);
-      state.totalCartAmount = totalsArr.reduce((prev, curr) => prev + curr);
+      const totalsArr = state.buyCartItems.map((id) => {
+        const amount = () => {
+          for (let item of state.cartItems) {
+            if (item.productID === id) {
+              return item.totalAmount;
+            }
+          }
+        };
+        return amount();
+      });
+      state.totalCartAmount = totalsArr.reduce((prev, curr) => prev + curr, 0);
     },
     totalCartQty: (state) => {
       const totalsArr = state.cartItems.map((item) => item.qty);
@@ -115,8 +125,59 @@ export const cartSlice = createSlice({
         0
       );
     },
+    increaseItemQtyInCart: (state, action) => {
+      const index = state.cartItems.findIndex(
+        (item) => item.productID === action.payload
+      );
+
+      state.cartItems[index].qty += 1;
+      state.totalCartQuantity += 1;
+    },
+    reduceItemQtyInCart: (state, action) => {
+      const index = state.cartItems.findIndex(
+        (item) => item.productID === action.payload
+      );
+      if (state.cartItems[index].qty > 1) {
+        state.cartItems[index].qty -= 1;
+        state.totalCartQuantity -= 1;
+      }
+    },
+    totalCartItemAmount: (state) => {
+      state.cartItems.map((item) => (item.totalAmount = item.qty * item.price));
+    },
+    selectCartItemToBuy: (state, action) => {
+      state.buyCartItems.push(action.payload);
+    },
+    deselectCartItemToBuy: (state, action) => {
+      state.buyCartItems = state.buyCartItems.filter(
+        (item) => item !== action.payload
+      );
+    },
+    totalBuyCartItemsQty: (state) => {
+      const qtyArr = state.buyCartItems.map((id) => {
+        const qty = () => {
+          for (let item of state.cartItems) {
+            if (item.productID === id) {
+              return item.qty;
+            }
+          }
+        };
+        return qty();
+      });
+      state.totalBuyCartQty = qtyArr.reduce((prev, curr) => prev + curr, 0);
+    },
   },
 });
 
-export const { addToCart, removeFromCart, totalCartAmount, totalCartQty } =
-  cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  totalCartAmount,
+  totalCartQty,
+  increaseItemQtyInCart,
+  reduceItemQtyInCart,
+  totalCartItemAmount,
+  selectCartItemToBuy,
+  deselectCartItemToBuy,
+  totalBuyCartItemsQty,
+} = cartSlice.actions;
