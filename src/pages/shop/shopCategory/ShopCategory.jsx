@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "./ShopCategory.css";
 
@@ -24,9 +23,7 @@ const ShopCategory = ({ params }) => {
 
   return (
     <>
-      {/* <Header /> */}
       <CategoryPage categoryArray={categoryArray} params={params} dat={dat} />
-      {/* <Footer /> */}
     </>
   );
 };

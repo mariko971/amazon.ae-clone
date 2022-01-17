@@ -12,6 +12,9 @@ const Cart = ({ currentUser }) => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalCartAmount = useSelector((state) => state.cart.totalCartAmount);
   const totalBuyCartQty = useSelector((state) => state.cart.totalBuyCartQty);
+  const totalCartItemsQty = useSelector(
+    (state) => state.cart.totalCartQuantity
+  );
   const promoData = useSelector((state) => state.home.ads_Data.promo);
   const filteredPromoData = promoData.filter((item) => item.type === "byFour");
 
@@ -116,21 +119,25 @@ const Cart = ({ currentUser }) => {
           </div>
         </div>
         <div className="cart__aside">
-          <div className="cart__aside-buy">
-            {totalCartAmount > 0 ? (
-              <p className="cart-items_total">
-                {` Subtotal (${totalBuyCartQty} ${
-                  totalBuyCartQty > 1 ? "Items" : "Item"
-                }): `}
-                <span id="cart-items_total">
-                  {formatter.format(totalCartAmount)}
-                </span>
-              </p>
-            ) : (
-              <p className="cart-items_total">No items selected</p>
-            )}
-            <button className="cart__aside-buy-btn">Proceed to Buy</button>
-          </div>
+          {currentUser && totalCartItemsQty > 0 ? (
+            <div className="cart__aside-buy">
+              {totalCartAmount > 0 ? (
+                <p className="cart-items_total">
+                  {` Subtotal (${totalBuyCartQty} ${
+                    totalBuyCartQty > 1 ? "Items" : "Item"
+                  }): `}
+                  <span id="cart-items_total">
+                    {formatter.format(totalCartAmount)}
+                  </span>
+                </p>
+              ) : (
+                <p className="cart-items_total">No items selected</p>
+              )}
+              <Link to={"/buy/shipping"}>
+                <button className="cart__aside-buy-btn">Proceed to Buy</button>
+              </Link>
+            </div>
+          ) : null}
           <div className="cart-promo_container ad-container">
             <AdByFour
               title={cartPromo.title}

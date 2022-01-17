@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { auth, createCustomerProfile } from "./firebase/firebase.utils";
+import { onSnapshot } from "firebase/firestore";
+import { onAuthStateChanged } from "firebase/auth";
 
 import Home from "./pages/home/Home";
 import SignInPage from "./pages/sign-in page/SignInPage";
@@ -9,9 +12,8 @@ import Cart from "./pages/cart/Cart";
 import ShopBestSellers from "./pages/shop/ShopBestSellers/ShopBestSellers";
 import ShopMain from "./pages/shop/shopMain/ShopMain";
 import ShopItemInfo from "./components/shop-Item-Info/ShopItemInfo";
-import { auth, createCustomerProfile } from "./firebase/firebase.utils";
-import { onSnapshot } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
+import Shipping from "./pages/shipping/Shipping";
+
 import MasterPage from "./pages/MasterPage";
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
         />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/buy/shipping" element={<Shipping />} />
         <Route
           path="/cart"
           element={<MasterPage ChildPage={Cart} currentUser={currentUser} />}
