@@ -25,6 +25,7 @@
   border-color: rgb(133, 133, 133);
   padding: 0 24px 0 11px;
   margin-bottom: 10px;
+  outline: none;
 }
 
 .formInput input {
@@ -38,6 +39,12 @@
   box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
   outline: 0;
   margin-bottom: 5px;
+}
+
+.formInput input:focus,
+.formInput #country:focus {
+  border: 1px solid #ff9100;
+  box-shadow: 0 0 5px #ff9100;
 }
 
 .shipping-wrapper h1 {
@@ -95,4 +102,9 @@
 
 #defaultAddress {
   margin-right: 0.5rem;
+}
+
+.defaultAddress {
+  display: flex;
+  align-items: center;
 }

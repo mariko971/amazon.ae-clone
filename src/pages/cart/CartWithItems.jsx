@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { cartAction } from "../../redux.utils";
 import { truncate, formatter } from "../../components/utils";
@@ -14,8 +14,10 @@ import {
 } from "../../slices/appSlices";
 
 const CartWithItems = ({ item }) => {
-  const [isChecked, setIsChecked] = useState(false);
-  //   const [buyItemsArr, setBuyItemsArr] = useState([]);
+  const buyCartItems = useSelector((state) => state.cart.buyCartItems);
+  const [isChecked, setIsChecked] = useState(
+    buyCartItems.includes(item.productID)
+  );
   const dispatch = useDispatch();
 
   const handleChange = () => {
