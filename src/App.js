@@ -44,7 +44,10 @@ function App() {
         />
         <Route path="/sign-in" element={<SignInPage />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/buy/shipping" element={<Shipping />} />
+        <Route
+          path="/buy/shipping"
+          element={<Shipping currentUser={currentUser} />}
+        />
         <Route
           path="/cart"
           element={<MasterPage ChildPage={Cart} currentUser={currentUser} />}

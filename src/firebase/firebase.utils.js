@@ -5,7 +5,13 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import { getFirestore, getDoc, doc, setDoc } from "firebase/firestore";
+import {
+  getFirestore,
+  getDoc,
+  doc,
+  setDoc,
+  updateDoc,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBgympHY0AXFelNT0c7fyUP3zcM27vEGhc",
@@ -59,4 +65,15 @@ export const userSignOut = () => {
       // An error happened.
       console.error(error);
     });
+};
+
+export const addShippingAddress = async (id, shippingData) => {
+  const userRef = doc(db, `customers/${id}`);
+  try {
+    await updateDoc(userRef, {
+      shippingInfo: shippingData,
+    }).then(() => console.log("done"));
+  } catch (error) {
+    console.log(error.message);
+  }
 };
