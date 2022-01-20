@@ -1,3 +1,11 @@
+import {
+  addToCart,
+  totalCartAmount,
+  totalCartQty,
+  totalCartItemAmount,
+} from "../slices/appSlices";
+import { addToFirebaseCart } from "../firebase/firebase.utils";
+
 export const scrollNext = (id) => {
   const wrapper = document.querySelector(`.slider-${id}`);
   wrapper.scrollLeft += 1400;
@@ -72,3 +80,44 @@ export function truncate(str) {
     ? str.split(" ").slice(0, 28).join(" ") + "..."
     : str;
 }
+
+export const formatPrice = (productPrice) => {
+  const price = formatter.format(productPrice);
+  const currency = price.split("").slice(0, 3).join("");
+  const fraction = price
+    .split("")
+    .slice(price.length - 2, price.length)
+    .join("");
+  const value = price
+    .split("")
+    .slice(4, price.length - 3)
+    .join("");
+
+  return { currency, value, fraction };
+};
+
+export const handleAddToCart = (dispatch, product, id) => {
+  const { productID, imageUrl, productDescription, price } = product;
+  const qtyValue = parseInt(document.getElementById("quantity").value);
+  const cartItem = {
+    productID,
+    imageUrl,
+    productDescription,
+    price,
+    qty: qtyValue,
+    totalAmount: 0,
+  };
+  dispatch(addToCart(cartItem));
+  dispatch(totalCartQty());
+  dispatch(totalCartItemAmount());
+  dispatch(totalCartAmount());
+  addToFirebaseCart(cartItem, id);
+};
+
+export const getProduct = (shop, category, productID) => {
+  const categoryArray = shop.shopData.filter(
+    (item) => item.category === category
+  )[0].data;
+
+  return categoryArray.filter((item) => item.productID === productID)[0];
+};

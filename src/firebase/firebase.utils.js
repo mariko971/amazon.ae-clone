@@ -77,3 +77,16 @@ export const addShippingAddress = async (id, shippingData) => {
     console.log(error.message);
   }
 };
+
+export const addToFirebaseCart = async (item, id) => {
+  const docRef = doc(db, `customers/${id}`);
+  const snapshot = await getDoc(docRef);
+  const data = snapshot.data();
+  try {
+    await updateDoc(docRef, {
+      cart: [...data.cart, item],
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
