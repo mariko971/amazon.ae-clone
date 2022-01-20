@@ -13,7 +13,7 @@ import ShopBestSellers from "./pages/shop/ShopBestSellers/ShopBestSellers";
 import ShopMain from "./pages/shop/shopMain/ShopMain";
 import ShopItemInfo from "./components/shop-Item-Info/ShopItemInfo";
 import Shipping from "./pages/shipping/Shipping";
-
+import Checkout from "./pages/checkout/Checkout";
 import MasterPage from "./pages/MasterPage";
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
     });
     return unsubscribeFromAuth;
   }, []);
+  console.log(currentUser);
   return (
     <div className="App">
       <Routes>
@@ -47,6 +48,10 @@ function App() {
         <Route
           path="/buy/shipping"
           element={<Shipping currentUser={currentUser} />}
+        />
+        <Route
+          path="/buy/checkout"
+          element={<Checkout currentUser={currentUser} />}
         />
         <Route
           path="/cart"

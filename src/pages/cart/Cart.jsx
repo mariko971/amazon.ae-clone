@@ -133,8 +133,17 @@ const Cart = ({ currentUser }) => {
               ) : (
                 <p className="cart-items_total">No items selected</p>
               )}
-              <Link to={"/buy/shipping"}>
-                <button className="cart__aside-buy-btn">Proceed to Buy</button>
+              <Link
+                to={
+                  currentUser.shippingInfo ? "/buy/checkout" : "/buy/shipping"
+                }
+              >
+                <button
+                  className="cart__aside-buy-btn"
+                  disabled={totalBuyCartQty === 0}
+                >
+                  Proceed to Buy
+                </button>
               </Link>
             </div>
           ) : null}
