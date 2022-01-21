@@ -64,7 +64,7 @@ const Header = ({ currentUser }) => {
                   </select>
                 </div>
                 <input type="text" className="search-input" />
-                <button className="search-btn" action>
+                <button className="search-btn">
                   <SearchIcon className="search-icon" />
                 </button>
               </div>

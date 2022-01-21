@@ -170,4 +170,16 @@
   background: #e9c201;
   border: solid 1px #e0bb01;
 }
+
+.product-info-row {
+  display: flex;
+}
+
+.product-info_value {
+  flex: 1;
+  margin-left: 2rem;
+}
+.product-info_title {
+  width: 105px;
+}
 /* 565959 */

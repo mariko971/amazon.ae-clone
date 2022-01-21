@@ -60,7 +60,7 @@ const ShopItemInfo = ({ currentUser }) => {
             <table className="product-info-table">
               <tbody>
                 {product.productInfo.details.map((row, i) => (
-                  <tr key={i}>
+                  <tr className="product-info-row" key={i}>
                     <td className="product-info_title">{row.title}</td>
                     <td className="product-info_value">{row.value}</td>
                   </tr>

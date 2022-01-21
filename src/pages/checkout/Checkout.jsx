@@ -1,5 +1,6 @@
 import React from "react";
 import "./Checkout.css";
+import { Link } from "react-router-dom";
 import StripeCheckoutButton from "./stripe/StripeCheckout";
 import { useSelector } from "react-redux";
 import { formatter } from "../../components/utils";
@@ -11,11 +12,13 @@ const Checkout = ({ currentUser }) => {
   return (
     <>
       <div className="checkout-container">
-        <img
-          id="amazonLogo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG7.png"
-          alt="amazon logo"
-        />
+        <Link to={"/"}>
+          <img
+            id="amazonLogo"
+            src="http://pngimg.com/uploads/amazon/amazon_PNG7.png"
+            alt="amazon logo"
+          />
+        </Link>
         <div className="checkout-header">
           <h1>Shipping Address</h1>
           <h1>Total Amount</h1>

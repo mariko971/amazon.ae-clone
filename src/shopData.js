@@ -488,6 +488,27 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         OS: "IOS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61AMxJG2wcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61Ce1X4co-L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81UAH+XWVtL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ttQFx4P6L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81g8ZLIB2FL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/818gMGhF8GL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/91pD8Wp1jcL._AC_SL1500_.jpg",
+          ],
+          details: [
+            {
+              title: "Model Name",
+              value: "10.2-inch iPad Wi‑Fi 64GB - Space Gray",
+            },
+            { title: "Brand", value: "Apple" },
+            { title: "Generation", value: "9th Generation" },
+            { title: "Screen Size", value: "10.2 Inches" },
+            { title: "Operating System", value: "IpadOS 15" },
+          ],
+        },
       },
       {
         productID: "xnmyk",
@@ -501,10 +522,31 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         OS: "IOS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61CteWkcEFL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61lbuTaJmVL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81tLSgg5-9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ttQFx4P6L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81g8ZLIB2FL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/818gMGhF8GL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/91pD8Wp1jcL._AC_SL1500_.jpg",
+          ],
+          details: [
+            {
+              title: "Model Name",
+              value: "10.2-inch iPad Wi‑Fi 64GB - Silver",
+            },
+            { title: "Brand", value: "Apple" },
+            { title: "Generation", value: "9th Generation" },
+            { title: "Screen Size", value: "10.2 Inches" },
+            { title: "Operating System", value: "IpadOS 15" },
+          ],
+        },
       },
       {
         productID: "6bd31i",
-        prodyctName: "Aple Ipad 2021",
+        prodyctName: "Apple Ipad 2021",
         imageUrl:
           "https://m.media-amazon.com/images/I/61AMxJG2wcL._AC_UL480_QL65_.jpg",
         productDescription:
@@ -514,6 +556,27 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         OS: "IOS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61AMxJG2wcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61Ce1X4co-L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81UAH+XWVtL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ttQFx4P6L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81g8ZLIB2FL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/818gMGhF8GL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/91pD8Wp1jcL._AC_SL1500_.jpg",
+          ],
+          details: [
+            {
+              title: "Model Name",
+              value: "10.2-inch iPad Wi‑Fi 256GB - Space Gray",
+            },
+            { title: "Brand", value: "Apple" },
+            { title: "Generation", value: "9th Generation" },
+            { title: "Screen Size", value: "10.2 Inches" },
+            { title: "Operating System", value: "IpadOS 15" },
+          ],
+        },
       },
       {
         productID: "s6c6q",
@@ -527,6 +590,23 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         OS: "IOS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71AJC-PE5IS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61-v165t-lS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71AfQ+XminS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81GTk8jCxxS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71a2anhcVIS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61Q1z66auHS._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "MYFQ2AB/A" },
+            { title: "Brand", value: "Apple" },
+            { title: "Generation", value: "2nd Generation" },
+            { title: "Screen Size", value: "10.9 Inches" },
+            { title: "Operating System", value: "IOS 14" },
+          ],
+        },
       },
       {
         productID: "6ly9tp",
@@ -534,12 +614,28 @@ export const shopData = [
         imageUrl:
           "https://m.media-amazon.com/images/I/513tmuYpH9L._AC_UL480_FMwebp_QL65_.jpg",
         productDescription:
-          "Lenovo Tab M8 HD 2ND GEN (TB-8505F), 8 inch Tablet, MediaTek Helio A22 Processor,…",
+          "Lenovo Tab M8 HD 2ND GEN (TB-8505F), 8 inch Tablet, MediaTek Helio A22 Processor, 2GB RAM, 16GB Storage, WiFi, Android OS, Iron Grey - [ZA5G0115AE]",
         rating: 4.0,
         price: 399.0,
         currency: "AED",
         brand: "Lenovo",
         OS: "Android",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/513tmuYpH9L._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41MF4ZG16IL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41eBHVjPOIL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41GzvzjqttL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51H-93ZztQL._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Series", value: "Tab M8 HD (2nd Gen)" },
+            { title: "Brand", value: "Lenovo" },
+            { title: "Generation", value: "2nd Generation" },
+            { title: "Screen Size", value: "8 Inches" },
+            { title: "Operating System", value: "Android 9 Pie" },
+          ],
+        },
       },
       {
         productID: "p58wf9",
@@ -547,12 +643,28 @@ export const shopData = [
         imageUrl:
           "https://m.media-amazon.com/images/I/71MDku1iKgL._AC_UL480_FMwebp_QL65_.jpg",
         productDescription:
-          "Lenovo Tab M10 (TB-X505F), 10.1 inch Tablet, Qualcomm Snapdragon 429 Processor, 2GB…",
+          "Lenovo Tab M10 (TB-X505X), 10.1 inch Tablet, Qualcomm Snapdragon 429 Processor, 2GB RAM, 32GB Storage, WiFi+4G LTE, Android OS, Slate Black - [ZA4K0026AE]",
         rating: 3.5,
         price: 456.95,
         currency: "AED",
         brand: "Lenovo",
         OS: "Android",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61zJ-WxlgcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/51fuDxDsqWL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71l35D8VmrL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61Dd1hvKs-L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61uNu1nmUcL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Lenovo" },
+            { title: "Color", value: "Slate Black" },
+            { title: "Screen Size", value: "10.1 Inches" },
+            { title: "Operating System", value: "Android" },
+            { title: "Memory storage capacity", value: "32 GB" },
+          ],
+        },
       },
       {
         productID: "pp5i68",
@@ -566,6 +678,23 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         OS: "IOS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81Y5WuARqpS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71IBJaDNl0S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81G35xZ-d1S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/816WH7-GCTS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71kEjkD8YpS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61D0JLi+q3S._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "MHQU3AB/A" },
+            { title: "Brand", value: "Apple" },
+            { title: "Generation", value: "3rd Generation" },
+            { title: "Screen Size", value: "11 Inches" },
+            { title: "Operating System", value: "IOS 14" },
+          ],
+        },
       },
       {
         productID: "l29n2g",
@@ -579,6 +708,26 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         OS: "IOS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71hM0QvGshL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61FXI7HjsWL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/916syDIqZ7L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81jV9N2mcUL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71+ZpWvs1sL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61eATVQihbL._AC_SL1500_.jpg",
+          ],
+          details: [
+            {
+              title: "Model Name",
+              value: "IPad mini Wi‑Fi + Cellular 256GB - Space Gray",
+            },
+            { title: "Brand", value: "Apple" },
+            { title: "Generation", value: "6th Generation" },
+            { title: "Screen Size", value: "8.3 Inches" },
+            { title: "Operating System", value: "IPadOS 15" },
+          ],
+        },
       },
       {
         productID: "sf6gye",
@@ -592,18 +741,53 @@ export const shopData = [
         currency: "AED",
         brand: "Microsoft",
         OS: "Windows",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/610F-2TJaCL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71RGIN8IbjL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61gGmhpI3kL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71t3pxeTJfL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Ynszuzj9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71JnXIVVcnL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Series", value: "1901" },
+            { title: "Brand", value: "Microsoft" },
+            { title: "Generation", value: "8th Generation" },
+            { title: "Screen Size", value: "10.5 Inches" },
+            { title: "Operating System", value: "Windows 10 Home" },
+          ],
+        },
       },
       {
         productID: "2lfrk1",
-        prodyctName: "Microsoft Surface Go",
+        prodyctName: "Microsoft Surface GO 2",
         imageUrl:
-          "https://m.media-amazon.com/images/I/31+t7B681+L._AC_UL480_FMwebp_QL65_.jpg",
-        productDescription: "Microsoft Surface Go 10 Tablet",
+          "https://m.media-amazon.com/images/I/61JuOxNsHtL._AC_UL480_FMwebp_QL65_.jpg",
+        productDescription:
+          "Microsoft Surface GO 2 [STV-00005], Tablet-PC, Intel Pentium Gold 4425Y Processor, 4GB RAM, 64GB eMMC, 10.5 inch, Intel UHD Graphics 615, Win10 S Mode, WiFi, Platinum [Middle East Version]",
         rating: 4.5,
         price: 1649,
         currency: "AED",
         brand: "Microsoft",
         OS: "Windows",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61JuOxNsHtL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/7120020W1CL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61PSTO4AZcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71tKlwdj5YL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71oW46sgV9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41OKWXVx7yL._AC_.jpg",
+          ],
+          details: [
+            { title: "Series", value: "Microsoft Surface Go 2" },
+            { title: "Brand", value: "Microsoft" },
+            { title: "Screen Size", value: "10.5 Inches" },
+            { title: "Operating System", value: "Windows 10 Home" },
+            { title: "Memory storage capacity", value: "64 GB" },
+          ],
+        },
       },
       {
         productID: "t8p4j",
@@ -617,6 +801,22 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         OS: "Windows",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71GXjvnIlcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/714oPj1abwL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71XBQgfo1nL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71d7XQEc1YL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81XBe3QhdoL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Samsung" },
+            { title: "Screen Size", value: "12 Inches" },
+            { title: "Operating System", value: "Windows" },
+            { title: "Memory storage capacity", value: "128 GB" },
+            { title: "Color", value: "Black" },
+          ],
+        },
       },
       {
         productID: "18opm2",
@@ -630,6 +830,23 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         OS: "Android",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81AG6QYrM+S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ZKNdyNELS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/418SRdcye2S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61WtbMN6ayS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81xywdJ5fZS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/8172n06NaTS._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Series", value: "Galaxy Tab A7 Lite 64GB Grey LTE" },
+            { title: "Brand", value: "Samsung" },
+            { title: "Screen Size", value: "8.7 Inches" },
+            { title: "Operating System", value: "Android" },
+            { title: "Memory storage capacity", value: "64 GB" },
+          ],
+        },
       },
     ],
   },
@@ -649,6 +866,22 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61i8Vjb17SL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71zwao302EL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81DzfVDR-lL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/7161nwSVX9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/812rT8Q7qHL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61H1IxON5HL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Series", value: "IPhone 13 Pro Max 256GB Sierra Blue" },
+            { title: "Brand", value: "Apple" },
+            { title: "Form Factor", value: "Slider" },
+            { title: "Memory storage capacity", value: "256 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -662,6 +895,21 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71MHTD3uL4L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81sSyXuZBqL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81RZc5OK9YL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81L7XxVZtHL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81xaMP9TqPL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "MGDF3AA/A" },
+            { title: "Brand", value: "Apple" },
+            { title: "Form Factor", value: "Bar" },
+            { title: "Memory storage capacity", value: "256 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -675,6 +923,20 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51jomkh3CFS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51hiCDVOIKS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51y74zRzy8S._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51bfroWLzCS._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Galaxy Note20 Ultra" },
+            { title: "Brand", value: "Samsung" },
+            { title: "Form Factor", value: "Smart Phone" },
+            { title: "Memory storage capacity", value: "256 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -688,6 +950,22 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71lvzz864+L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/811OxBQ2wIL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81eRb3r4VUL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81A+3fSPCpL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71ad2wgwC5L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41bt5eeVVrL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Galaxy A52s 5G" },
+            { title: "Brand", value: "Samsung" },
+            { title: "Form Factor", value: "Touch Screen" },
+            { title: "Memory storage capacity", value: "256 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -701,6 +979,22 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61sDyXAepuL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71k0zz+8paL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71VNa3QYKcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/7161nwSVX9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81UbpiiNwrL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61M2F7QmmtL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "IPhone 13 Pro 256GB Gold" },
+            { title: "Brand", value: "Apple" },
+            { title: "Form Factor", value: "Slider" },
+            { title: "Memory storage capacity", value: "256 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -713,6 +1007,22 @@ export const shopData = [
         currency: "AED",
         brand: "Apple",
         storage: "128 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61d8XHJuE2L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81junVbiuyL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/817WqZsxjWL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81D+jJBOfpL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61jcXSsEXzL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "IPhone 13 128GB Blue" },
+            { title: "Brand", value: "Apple" },
+            { title: "Form Factor", value: "Slider" },
+            { title: "Memory storage capacity", value: "128 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -726,6 +1036,22 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61qcH1P2XjS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61pPSCCFlVS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61s79-4guRS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51IkjJFQGVS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51kNe+rL7kS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51B2pWTVvnS._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Galaxy S21 Ultra" },
+            { title: "Brand", value: "Samsung" },
+            { title: "Form Factor", value: "Touch Bar" },
+            { title: "Memory storage capacity", value: "256 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -739,6 +1065,22 @@ export const shopData = [
         currency: "AED",
         brand: "Xiaomi",
         storage: "256 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51JXERYpvHL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/411Ope3OU8S._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41+fBUFxy3S._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41G3+iLLfWS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/31iGFAFB5hS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/317VqGb4FrS._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Redmi Note 10S" },
+            { title: "Brand", value: "Xiaomi" },
+            { title: "Form Factor", value: "Bar" },
+            { title: "Memory storage capacity", value: "6 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -752,6 +1094,22 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         storage: "64 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81+Zecmq92S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61MHYiq2UpS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81DQJw1g+DL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/91Xw+aaC-8S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61ajWntv13L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71gs42tfPAL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Galaxy M12" },
+            { title: "Brand", value: "Samsung" },
+            { title: "Form Factor", value: "Touch Bar" },
+            { title: "Memory storage capacity", value: "64 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -765,6 +1123,22 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         storage: "128 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81aP7ztJqhL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71m7CmsUJfL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81txYj85lrL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71b77mY6NeL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61rjfrVyW9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/611HLyoc-AL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Galaxy A12" },
+            { title: "Brand", value: "Samsung" },
+            { title: "Form Factor", value: "Touch Bar" },
+            { title: "Memory storage capacity", value: "128 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -778,6 +1152,22 @@ export const shopData = [
         currency: "AED",
         brand: "OPPO",
         storage: "128 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81yGsmHeOYL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71eurrqqFEL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71yCCTcQo5L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/810nlIAz8WL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/810ZhGa054L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81IndOEvVBL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Reno6 5G" },
+            { title: "Brand", value: "OPPO" },
+            { title: "Form Factor", value: "Bar" },
+            { title: "Memory storage capacity", value: "128 GB" },
+          ],
+        },
       },
       {
         productID: ID(),
@@ -791,126 +1181,32 @@ export const shopData = [
         currency: "AED",
         brand: "Google",
         storage: "128 GB",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71SsBCLDt9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41Y3cU3zB7L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/51vCfU1c8lL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71t4x1uHzBL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71sFiWYEB-L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/51pmbK+XhjL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Model Name", value: "Pixel 6" },
+            { title: "Brand", value: "Google" },
+            { title: "Form Factor", value: "Bar" },
+            { title: "Memory storage capacity", value: "128 GB" },
+          ],
+        },
       },
     ],
   },
-  // GAMING
-  {
-    category: "Gaming",
-    data: [
-      {
-        productID: ID(),
-        productName: "Oculus Quest 2",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/615YaAiA-ML._AC_UL480_QL65_.jpg",
-        productDescription: "Oculus Quest 2 - 128 GB - Virtual Reality Headset",
-        rating: 4.0,
-        price: 1297.0,
-        currency: "AED",
-        brand: "Oculus",
-      },
-      {
-        productID: ID(),
-        productName: "Nintendo Switch",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/61k5IJVYTUL._AC_UL480_QL65_.jpg",
-        productDescription:
-          "Nintendo Switch (OLED Model) - Neon Red & Neon Blue Joy Con (UAE Version)",
-        rating: 4.5,
-        price: 1518.5,
-        currency: "AED",
-        brand: "Nintendo",
-      },
-      {
-        productID: ID(),
-        productName: "PS4 FIFA 2022",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/81fprhh1OCL._AC_UL480_QL65_.jpg",
-        productDescription: "FIFA 2022 (PS4) - Int'l version",
-        rating: 4.0,
-        price: 154.77,
-        currency: "AED",
-        brand: "PS4",
-      },
-      {
-        productID: ID(),
-        productName: "Xbox Series X Console",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/515tLyCgdXL._AC_UL480_QL65_.jpg",
-        productDescription:
-          "Microsoft Xbox Series X Gaming Console, 1TB, Black (UAE Version)",
-        rating: 4.5,
-        price: 2437.0,
-        currency: "AED",
-        brand: "Xbox",
-      },
-      {
-        productID: ID(),
-        productName: "Playstation 5 Console",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/51NsAufNveL._AC_UL480_QL65_.jpg",
-        productDescription: "PlayStation 5 Console (UAE Version)",
-        rating: 4.5,
-        price: 3225.0,
-        currency: "AED",
-        brand: "PS5",
-      },
-      {
-        productID: ID(),
-        productName: "PlayStation 5 Wireless Controller",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/61CdkDnFw6S._AC_UL480_QL65_.jpg",
-        productDescription:
-          "PlayStation 5 DualSense Wireless Controller (UAE Version) - Midnight Black",
-        rating: 4.5,
-        price: 228.0,
-        currency: "AED",
-        brand: "PS5",
-      },
-      {
-        productID: ID(),
-        productName: "PlayStation 5 Wireless Headset",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/6185q-YAwPL._AC_UL480_QL65_.jpg",
-        productDescription:
-          "PlayStation 5 PULSE 3D Wireless Headset (UAE Version)",
-        rating: 4.5,
-        price: 272.85,
-        currency: "AED",
-        brand: "PS5",
-      },
-      {
-        productID: ID(),
-        productName: "PlayStation 5 Disc Console",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/416ASNUOdOL._AC_UL480_QL65_.jpg",
-        productDescription:
-          "PlayStation 5 Disc Console Standard Edition with Extra DualSense Controller White and PS5 Spiderman Miles Morales Game",
-        rating: 4.5,
-        price: 3613.0,
-        currency: "AED",
-        brand: "PS5",
-      },
-      {
-        productID: ID(),
-        productName: "Sony PlayStation VR Bundle",
-        imageUrl:
-          "https://m.media-amazon.com/images/I/31q23-L3y6L._AC_UY327_FMwebp_QL65_.jpg",
-        productDescription:
-          "Sony PlayStation Virtual Reality Bundle - VR Headset (Version 2 - CUH-ZVR2), VR Camera, 2 Move Motion Controllers, VR Worlds Game",
-        rating: 4.0,
-        price: 2105.0,
-        currency: "AED",
-        brand: "Sony",
-      },
-    ],
-  },
+
   // HEADPHONES
   {
     category: "Headphones",
     data: [
       {
-        productID: ID(),
+        productID: "ubtxe14",
         productName: "Apple AirPods",
         imageUrl:
           "https://m.media-amazon.com/images/I/615ekapl+pL._AC_UL480_QL65_.jpg",
@@ -919,9 +1215,32 @@ export const shopData = [
         price: 642.89,
         currency: "AED",
         brand: "Apple",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/615ekapl+pL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ilB-UjbUL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61EcSkrkl2L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/718TuVzLbbL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61ZvNJ-b+KL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61csINpjQEL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Apple" },
+            {
+              title: "Colour",
+              value: "White",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Model name", value: "Apple AirPods (3rd generation)" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "oo6zs7m",
         productName: "Apple Airpods Pro",
         imageUrl:
           "https://m.media-amazon.com/images/I/71bhWgQK-cL._AC_UL480_QL65_.jpg",
@@ -931,9 +1250,32 @@ export const shopData = [
         price: 719.0,
         currency: "AED",
         brand: "Apple",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71bhWgQK-cL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71+oSLK5SIL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71zny7BTRlL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71V9-3bT9rL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81nuOe+XCtL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71tbMyhmxcL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Apple" },
+            {
+              title: "Colour",
+              value: "White",
+            },
+            {
+              title: "Compatible devices",
+              value: "MacBook, Ipad, IPhone",
+            },
+            { title: "Model name", value: "Apple AirPods (3rd generation)" },
+            { title: "Special features", value: "Microphone Included" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "5ibzbu9",
         productName: "Sony WH-1000XM4",
         imageUrl:
           "https://m.media-amazon.com/images/I/7160xoKFtgL._AC_UL480_QL65_.jpg",
@@ -943,9 +1285,32 @@ export const shopData = [
         price: 1076.0,
         currency: "AED",
         brand: "Sony",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/7160xoKFtgL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71aJDxS2chL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71j45pa+tSL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81cNDE7K--L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71z+umZklqL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81pxczpLKtL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Sony" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Model name", value: "WH-1000XM4" },
+            { title: "Form Factor", value: "Over Ear" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "diu581m",
         productName: "Apple EarPods",
         imageUrl:
           "https://m.media-amazon.com/images/I/41wYbyr3LLL._AC_UL480_QL65_.jpg",
@@ -954,9 +1319,32 @@ export const shopData = [
         price: 74.0,
         currency: "AED",
         brand: "Apple",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/41wYbyr3LLL._AC_SL1144_.jpg",
+            "https://m.media-amazon.com/images/I/41zg4DOTl2L._AC_SL1144_.jpg",
+            "https://m.media-amazon.com/images/I/41hpli-aKoL._AC_SL1144_.jpg",
+            "https://m.media-amazon.com/images/I/41VjW3LcESL._AC_SL1144_.jpg",
+            "https://m.media-amazon.com/images/I/412yYCVrObL._AC_SL1144_.jpg",
+            "https://m.media-amazon.com/images/I/41Mqt+x5mLL._AC_SL1144_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Apple" },
+            {
+              title: "Colour",
+              value: "White",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model name", value: "MMTN2ZM/A" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "ybz5mna",
         productName: "SoundPEATS Air 3",
         imageUrl:
           "https://m.media-amazon.com/images/I/61p6od98YQL._AC_UL480_QL65_.jpg",
@@ -966,9 +1354,32 @@ export const shopData = [
         price: 151.0,
         currency: "AED",
         brand: "SoundPEATS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61Qn0RflvVL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61NfsMfUpeL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61WDTlRhE2L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71zfAPn240L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/7136B9BXcKL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/51BxSzmFHOL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "SoundPEATS" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Noise control", value: "Active Noise Cancellation" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "mcudvzu",
         productName: "Sony WF-1000XM4",
         imageUrl:
           "https://m.media-amazon.com/images/I/41yNMJgWAkS._AC_UL480_QL65_.jpg",
@@ -978,9 +1389,32 @@ export const shopData = [
         price: 863.25,
         currency: "AED",
         brand: "Sony",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/41yNMJgWAkS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41Lg1Cnb1rS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/419OTN+RzMS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/31K+FL431xS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/410tAjyiJRS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/31dcGHevh9S._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Sony" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Model Name", value: "WF-1000XM4" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "sg1nkyy",
         productName: "SoundPEATS TrueAir 2",
         imageUrl:
           "https://m.media-amazon.com/images/I/61jDXJmW6JL._AC_UL480_QL65_.jpg",
@@ -992,7 +1426,7 @@ export const shopData = [
         brand: "SoundPEATS",
       },
       {
-        productID: ID(),
+        productID: "nxn60at",
         productName: "Anker Soundcore Life P2",
         imageUrl:
           "https://m.media-amazon.com/images/I/51hsq3bombL._AC_UL480_QL65_.jpg",
@@ -1004,7 +1438,7 @@ export const shopData = [
         brand: "Anker",
       },
       {
-        productID: ID(),
+        productID: "y6ehj8j",
         productName: "Xiaomi Mi True Wireless",
         imageUrl:
           "https://m.media-amazon.com/images/I/51Upw655zvL._AC_UL480_QL65_.jpg",
@@ -1016,7 +1450,7 @@ export const shopData = [
         brand: "Xiaomi",
       },
       {
-        productID: ID(),
+        productID: "325ep8n",
         productName: "JBL T110",
         imageUrl:
           "https://m.media-amazon.com/images/I/51sv1xBLGvL._AC_UL480_QL65_.jpg",
@@ -1028,7 +1462,7 @@ export const shopData = [
         brand: "JBL",
       },
       {
-        productID: ID(),
+        productID: "5fupgck",
         productName: "Bose Headphones 700",
         imageUrl:
           "https://m.media-amazon.com/images/I/412wLL5PxtL._AC_UL480_QL65_.jpg",
@@ -1040,7 +1474,7 @@ export const shopData = [
         brand: "Bose",
       },
       {
-        productID: ID(),
+        productID: "lyj5htg",
         productName: "JBL T750",
         imageUrl:
           "https://m.media-amazon.com/images/I/61drMUJ7VZL._AC_UL480_QL65_.jpg",
@@ -1052,7 +1486,7 @@ export const shopData = [
         brand: "JBL",
       },
       {
-        productID: ID(),
+        productID: "5me6zc3",
         productName: "Beats Solo Pro",
         imageUrl:
           "https://m.media-amazon.com/images/I/61w+edOrp9L._AC_UL480_QL65_.jpg",
@@ -1064,7 +1498,7 @@ export const shopData = [
         brand: "Beats",
       },
       {
-        productID: ID(),
+        productID: "eguwz4q",
         productName: "Seinnheiser PXC 550-II",
         imageUrl:
           "https://m.media-amazon.com/images/I/71JHUS7ox1L._AC_UL480_FMwebp_QL65_.jpg",
@@ -1076,7 +1510,7 @@ export const shopData = [
         brand: "Sennheiser",
       },
       {
-        productID: ID(),
+        productID: "jrgfiox",
         productName: "Seinnheiser M3AEBTXL",
         imageUrl:
           "https://m.media-amazon.com/images/I/71CkHZLa6WL._AC_UL480_FMwebp_QL65_.jpg",
@@ -1094,7 +1528,7 @@ export const shopData = [
     category: "Tvs",
     data: [
       {
-        productID: ID(),
+        productID: "2cmjyk4",
         productName: "Samsung AU8100 Crystal UHD 4K",
         imageUrl:
           "https://m.media-amazon.com/images/I/61JbtXgTM2L._AC_UL480_QL65_.jpg",
@@ -1105,9 +1539,35 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         screenSize: "55 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71J99loOfwL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71ufYW9hPAL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71JEUwYJ7iL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/611cRdLziYL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61ohgfAcAiL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61hEiXN3w4L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61CRRvLhQzL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "55 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Hulu, YouTube, Browser",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+            },
+            { title: "Brand", value: "SAMSUNG" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model name", value: "Crystal UHD 4K" },
+            { title: "Special features", value: "Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "4cx4goy",
         productName: "Hisense 55A6GE UHD ",
         imageUrl:
           "https://m.media-amazon.com/images/I/71tS3EY6cXL._AC_UL480_QL65_.jpg",
@@ -1118,9 +1578,35 @@ export const shopData = [
         currency: "AED",
         brand: "Hisense",
         screenSize: "55 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71tS3EY6cXL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71GjP6wh8fS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/716vpxsQbuS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71wExTHDB7L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61QRN4TgxQL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71mil+iqcHS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61PZ7-t20RL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "55 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, YouTube, Free view",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Bluetooth, USB, Wireless",
+            },
+            { title: "Brand", value: "Hisense" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model name", value: "55A6GE" },
+            { title: "Special features", value: "HDR10, DLNA, Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "83vwxh7",
         productName: "Samsung AU8000 Crystal UHD 4K",
         imageUrl:
           "https://m.media-amazon.com/images/I/61JbtXgTM2L._AC_UL480_QL65_.jpg",
@@ -1131,9 +1617,35 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         screenSize: "60 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71J99loOfwL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/611cRdLziYL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61hEiXN3w4L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61CRRvLhQzL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71xHQAmhOpL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61SZYGnTlzL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61PKaWIONFL._AC_SL1200_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "60 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Hulu, YouTube, Browser",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+            },
+            { title: "Brand", value: "SAMSUNG" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model name", value: "Crystal UHD 4K" },
+            { title: "Special features", value: "Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "b4u7giy",
         productName: "Samsung Q70A QLED 4K",
         imageUrl:
           "https://m.media-amazon.com/images/I/81rK-tWN0EL._AC_UL480_QL65_.jpg",
@@ -1144,9 +1656,35 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         screenSize: "65 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81rK-tWN0EL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/712BFrzvXxL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61dORzHo+BL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Ik0wjR-CL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61+phOQ7ULL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61MXr9gq9GL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/610aLMLkSSL._AC_SL1200_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "65 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Hulu, YouTube, Browser",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+            },
+            { title: "Brand", value: "SAMSUNG" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model name", value: "Neo QLED 4K" },
+            { title: "Special features", value: "Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "ag33ct6",
         productName: "Samsung AU7000 Crystal UHD 4K",
         imageUrl:
           "https://m.media-amazon.com/images/I/61IUE6Ju3vL._AC_UL480_QL65_.jpg",
@@ -1157,9 +1695,35 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         screenSize: "58 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61IUE6Ju3vL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61uMl1NDu0S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/610gjUUY-tL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/6199CObQ2vL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71txffssWlL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61SZYGnTlzL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61hE9GAI40L._AC_SL1200_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "58 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Hulu, YouTube, Browser",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+            },
+            { title: "Brand", value: "SAMSUNG" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model name", value: "Crystal UHD 4K" },
+            { title: "Special features", value: "Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "z0v5z77",
         productName: "LG OLED B1 Series",
         imageUrl:
           "https://m.media-amazon.com/images/I/51opUODtLmS._AC_UL480_QL65_.jpg",
@@ -1170,9 +1734,32 @@ export const shopData = [
         currency: "AED",
         brand: "LG",
         screenSize: "55 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61H-4qb5thL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71wGlAkbJxL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/715dRqAwk9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71QQNGVv3iL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/31Qike-kAfL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41Ty3FP3R7L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41EJNV2dq4L._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "55 Inches" },
+
+            {
+              title: "Connectivity technology",
+              value: "HDMI",
+            },
+            { title: "Brand", value: "LG" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model name", value: "Smart Tv" },
+            { title: "Special features", value: "Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "nivmc72",
         productName: "Sony Bravia X80J",
         imageUrl:
           "https://m.media-amazon.com/images/I/71sIJMpGuDS._AC_UL480_QL65_.jpg",
@@ -1183,9 +1770,38 @@ export const shopData = [
         currency: "AED",
         brand: "Sony",
         screenSize: "65 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71sIJMpGuDS._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/811vH++WYES._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71IML17RlSL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61j+tB1qj1S._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61OaWatCIeS._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/81cQC1WKQHS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41kh8cl9M3L._AC_SL1200_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "65 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Google Tv, YouTube",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+            },
+            { title: "Brand", value: "Sony" },
+            { title: "Resolution", value: "4K" },
+            { title: "Display Technology", value: "4K UHD LCD" },
+            {
+              title: "Special features",
+              value: "Smart Google TV, 4K UHD, Dolby Vision",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "macvc7c",
         productName: "Samsung 40T5300 FHD",
         imageUrl:
           "https://m.media-amazon.com/images/I/51jt+E8besL._AC_UL480_FMwebp_QL65_.jpg",
@@ -1195,22 +1811,66 @@ export const shopData = [
         currency: "AED",
         brand: "Samsung",
         screenSize: "40 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51jt+E8besL._AC_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "40 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Amazon Instant Video, YouTube",
+            },
+            {
+              title: "Connectivity technology",
+              value: " Wi-Fi",
+            },
+            { title: "Brand", value: "SAMSUNG" },
+            { title: "Resolution", value: "1080p" },
+            { title: "Display Technology", value: "LED" },
+            { title: "Special features", value: "Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "00k970w",
         productName: "Hisense FHD",
         imageUrl:
           "https://m.media-amazon.com/images/I/51W6yZxMlbL._AC_UL480_FMwebp_QL65_.jpg",
         productDescription:
           "Hisense 43 Inch TV FHD Smart TV, With Dolby Vision HDR, DTS Virtual X, YouTube, Netflix, Freeview Play &amp; Alexa Built-in, Bluetooth &amp; WiFi Black Model 43A4GTUK -1 Year Full Warranty.",
         rating: 4.0,
-        price: 1283.0,
+        price: 987.0,
         currency: "AED",
         brand: "Hisense",
         screenSize: "43 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51W6yZxMlbL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71Oz0q9OHML._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71+zESXHtKL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/819ADGId6yL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "43 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Amazon Instant Video, YouTube, Free View",
+            },
+            {
+              title: "Connectivity technology",
+              value: " Wi-Fi",
+            },
+            { title: "Brand", value: "Hisense" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model Name", value: "43A4GTUK" },
+            { title: "Display Technology", value: "FHD" },
+            { title: "Special features", value: "Dolby Vision, Smart" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "21pe76u",
         productName: "Sony Bravia XR X90J",
         imageUrl:
           "https://m.media-amazon.com/images/I/71YKL-RtchS._AC_UL480_FMwebp_QL65_.jpg",
@@ -1221,6 +1881,37 @@ export const shopData = [
         currency: "AED",
         brand: "Sony",
         screenSize: "65 Inch",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71XhYmcZPZS._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/71rghfibVXS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71r+4i3uT3L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61xE4dQHHJS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/81NGNBntPcS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61EqXAc1cQS._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/81hNFxZ+aCS._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Screen Size", value: "75 Inches" },
+            {
+              title: "Supported Internet Services",
+              value: "Netflix, Google TV, YouTube",
+            },
+            {
+              title: "Connectivity technology",
+              value: " Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+            },
+            { title: "Brand", value: "Sony" },
+            { title: "Resolution", value: "4K" },
+            { title: "Model Name", value: "BRAVIA X90J" },
+            { title: "Display Technology", value: "4K Ultra HD" },
+            {
+              title: "Special features",
+              value:
+                "XR COGNITIVE PROCESSOR, DOLBY VISION, IMAX ENHANCED, NETFLIX CALIBRATED MODE, HDMI 2.1, ACOUSTIC MULTI-AUDIO, APPLE AIRPLAY, XR MOTION CLARITY™",
+            },
+          ],
+        },
       },
     ],
   },
@@ -1229,7 +1920,7 @@ export const shopData = [
     category: "Speakers",
     data: [
       {
-        productID: ID(),
+        productID: "hspazqx",
         productName: "Echo Dot 4th Gen",
         imageUrl:
           "https://m.media-amazon.com/images/I/616VCBUJdnL._AC_UL480_QL65_.jpg",
@@ -1239,9 +1930,24 @@ export const shopData = [
         price: 229.0,
         currency: "AED",
         brand: "Echo Dot",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/616oAFh1szL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/616VCBUJdnL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61hYbiPPgaL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61t-tFhh9HL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61Wvzy6OYnL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61WOoooHGbL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61MrGZJGAeL._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Echo Dot" },
+            { title: "Colour", value: "Charcoal" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "qtr1zvt",
         productName: "Echo Dot 3rd Gen",
         imageUrl:
           "https://m.media-amazon.com/images/I/61Rr8uxmREL._AC_UL480_QL65_.jpg",
@@ -1251,9 +1957,24 @@ export const shopData = [
         price: 189.0,
         currency: "AED",
         brand: "Echo Dot",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61MrSaQQDpL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61Rr8uxmREL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61RGy8pbSDL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/6112lX7wP8L._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61Ud0w+-+iL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61uHxUukMML._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61ZH+Zb5bBL._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Echo Dot" },
+            { title: "Colour", value: "Charcoal" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "fklpilw",
         productName: "JBL Flip 5",
         imageUrl:
           "https://m.media-amazon.com/images/I/81xUOh2WLVL._AC_UL480_QL65_.jpg",
@@ -1263,9 +1984,32 @@ export const shopData = [
         price: 299.0,
         currency: "AED",
         brand: "JBL",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81xUOh2WLVL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81NBhYHSOIL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/817yVJ9gtyL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71yYhw9ID-L._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Bluetooth" },
+            { title: "Brand", value: "JBL" },
+            { title: "Model Name", value: "FLIP5BLK" },
+            {
+              title: "Recommended uses for product",
+              value:
+                "Outing, Partying, Playing, Outdoor, Swimming, Gathering, Indoor, Hiking",
+            },
+            {
+              title: "Special features",
+              value:
+                "Durable Fabric Material, Booming Bass, 12 Hours of Playtime, IPX7 Waterproof Design, JBL PartyBoost Compatible, Rugged Rubber Housing",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "buvdbz8",
         productName: "JBL GO 2",
         imageUrl:
           "https://m.media-amazon.com/images/I/71bsb-XWmaS._AC_UL480_QL65_.jpg",
@@ -1275,9 +2019,28 @@ export const shopData = [
         price: 95.0,
         currency: "AED",
         brand: "JBL",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71bsb-XWmaS._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71j2gEVCQQL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/710EzhDzVYL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81p9jbpecEL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/616EKvXH1jL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Bluetooth" },
+            { title: "Brand", value: "JBL" },
+            { title: "Model Name", value: "JBLGO2BLK" },
+            {
+              title: "Recommended uses for product",
+              value:
+                "Outing, Partying, Playing, Outdoor, Swimming, Gathering, Indoor, Hiking",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "76a45wy",
         productName: "Sony SRS-XB13",
         imageUrl:
           "https://m.media-amazon.com/images/I/81-lt27AAYL._AC_UL480_QL65_.jpg",
@@ -1287,9 +2050,27 @@ export const shopData = [
         price: 178.0,
         currency: "AED",
         brand: "Sony",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81-lt27AAYL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81Aqn3rX18S._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81w2RY0CDDS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71n91k3YazS._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81Qp53UOEwL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Bluetooth" },
+            { title: "Brand", value: "Sony" },
+            { title: "Model Name", value: "SRS-XB13" },
+            {
+              title: "Recommended uses for product",
+              value: "For Music Players",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "gflvdq9",
         productName: "Sony 120W Soundbar",
         imageUrl:
           "https://m.media-amazon.com/images/I/61EsdpUZdYL._AC_UL480_QL65_.jpg",
@@ -1299,9 +2080,28 @@ export const shopData = [
         price: 279.0,
         currency: "AED",
         brand: "Sony",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61EsdpUZdYL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71ZEVpXXonL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81-o1tzqy-L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Dvn-1EkBL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71MtgT-VVyL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Wired/Wireless" },
+            { title: "Brand", value: "Sony" },
+            { title: "Speaker type", value: "Soundbar" },
+            { title: "Model Name", value: "Ht-S100" },
+            {
+              title: "Audio output mode",
+              value: "Surround",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "bh73x2z",
         productName: "JBL 4K Ultra HD Soundbar",
         imageUrl:
           "https://m.media-amazon.com/images/I/31k5iFpCHRL._AC_UL480_QL65_.jpg",
@@ -1311,9 +2111,25 @@ export const shopData = [
         price: 1979.0,
         currency: "AED",
         brand: "JBL",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/31k5iFpCHRL._AC_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Wired/Wireless" },
+            { title: "Brand", value: "JBL" },
+            { title: "Speaker type", value: "Soundbar" },
+            { title: "Model Name", value: "5.1 4K True Wireless" },
+            {
+              title: "Recommended uses for product",
+              value:
+                "For Surround Sound Systems, For Televisions, For Smartphones or Tablets, For Music Players, For DVD Players",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "1uesjg2",
         productName: "Edifier Studio Speaker R1280Db",
         imageUrl:
           "https://m.media-amazon.com/images/I/913SI3UTzTL._AC_UL480_FMwebp_QL65_.jpg",
@@ -1322,9 +2138,28 @@ export const shopData = [
         price: 471.0,
         currency: "AED",
         brand: "Edifier",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/913SI3UTzTL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81wWs9djLFL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81fJxUOZLCL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/617bOpYPKNL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81rZW7YM0SL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Bluetooth" },
+            { title: "Brand", value: "Edifier" },
+            { title: "Speaker type", value: "Computer" },
+            { title: "Model Name", value: "R1280DB BK" },
+            {
+              title: "Recommended uses for product",
+              value: "For computers",
+            },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "x3rap47",
         productName: "Edifier Studio speaker S100oMKii",
         imageUrl:
           "https://m.media-amazon.com/images/I/618nqC0xiML._AC_UL480_FMwebp_QL65_.jpg",
@@ -1334,6 +2169,25 @@ export const shopData = [
         price: 1271.0,
         currency: "AED",
         brand: "Edifier",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/618nqC0xiML._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71qSagK1kpL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/510rAjZitlL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71ppuycdYNL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61JwHrzgM+L._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Connectivity Technology", value: "Bluetooth" },
+            { title: "Brand", value: "Edifier" },
+            { title: "Speaker type", value: "Bookshelf" },
+            { title: "Model Name", value: "S1000MKII" },
+            {
+              title: "Colour",
+              value: "Brown",
+            },
+          ],
+        },
       },
     ],
   },
@@ -1342,7 +2196,7 @@ export const shopData = [
     category: "Health & Personal Care",
     data: [
       {
-        productID: ID(),
+        productID: "apbdpqk",
         productName: "Harpic Toilet Speaker",
         imageUrl:
           "https://m.media-amazon.com/images/I/71ZVt6SkX6L._AC_UL480_QL65_.jpg",
@@ -1352,9 +2206,25 @@ export const shopData = [
         price: 15.62,
         currency: "AED",
         brand: "Harpic",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71ZVt6SkX6L._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71oC2bEE1UL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61yKOMe9kBL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61Xgm3F8SzL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61FIJmFOZJL._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Item form", value: "Liquid" },
+            { title: "Brand", value: "Harpic" },
+            { title: "Surface recommendationr", value: "Tiolet" },
+            { title: "Scent", value: "LOriginal" },
+            { title: "Item volume", value: "750ml x 3" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "3idf54m",
         productName: "Fairy Lemon Dishwashing soap ",
         imageUrl:
           "https://m.media-amazon.com/images/I/71IXc-Q7XUL._AC_UL480_QL65_.jpg",
@@ -1363,9 +2233,26 @@ export const shopData = [
         price: 13.95,
         currency: "AED",
         brand: "Fairy",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71IXc-Q7XUL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81NXwB7U59L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81GobL1spGL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81V-05n0M4L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81RZGdwjSAL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81MjdZTMpKL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Item form", value: "Liquid" },
+            { title: "Brand", value: "Fairy" },
+            { title: "Surface recommendationr", value: "Sink" },
+            { title: "Scent", value: "Lemon" },
+            { title: "Item volume", value: "750ml" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "x9geg8o",
         productName: "Fine Fluffy Facial Tissues",
         imageUrl:
           "https://m.media-amazon.com/images/I/71zvhpPDlFL._AC_UL480_QL65_.jpg",
@@ -1375,9 +2262,23 @@ export const shopData = [
         price: 17.65,
         currency: "AED",
         brand: "Fine",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71zvhpPDlFL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81rmOBk-G3L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71rPZwFJW0L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71MBd7D5gOL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Fine" },
+            { title: "Colour", value: "White" },
+            { title: "Material", value: "Nylon" },
+            { title: "Item weight", value: "140g" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "2hpdbxk",
         productName: "Jif Cream Clean",
         imageUrl:
           "https://m.media-amazon.com/images/I/61pVab2aZzS._AC_UL480_QL65_.jpg",
@@ -1386,9 +2287,22 @@ export const shopData = [
         price: 8.4,
         currency: "AED",
         brand: "Jif",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71X9uVky8+L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Rke+3MUhL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/31+8bIKt7rL._AC_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Jif" },
+            { title: "Format", value: "Cream" },
+            { title: "Item Volume", value: "500ml" },
+            { title: "Item weight", value: "2kg" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "2ixvicj",
         productName: "AEMOVER Face Mask",
         imageUrl:
           "https://m.media-amazon.com/images/I/719VfZ7rLQL._AC_UL480_QL65_.jpg",
@@ -1398,9 +2312,24 @@ export const shopData = [
         price: 32.95,
         currency: "AED",
         brand: "AEMOVER",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/719VfZ7rLQL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61-adBfHKGL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61TIZ2wSgWL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61YjpipyeBL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "AEMOVER" },
+            { title: "Size", value: "Regular" },
+            { title: "Colour", value: "Black" },
+            { title: "Style", value: "Regular" },
+            { title: "Material", value: "Cotton" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "nnkgzkx",
         productName: "Kleenex Kitchen Towel",
         imageUrl:
           "https://m.media-amazon.com/images/I/81uuGENeLiL._AC_UL480_QL65_.jpg",
@@ -1410,9 +2339,23 @@ export const shopData = [
         price: 15.2,
         currency: "AED",
         brand: "Kleenex",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81uuGENeLiL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81LDkK+M77L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81zLVk+GejL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71aIYvV4aSL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Kleenex" },
+            { title: "Size", value: "90 sheets" },
+            { title: "Colour", value: "White" },
+            { title: "Item Weight", value: "960g" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "qchwbow",
         productName: "Downy Fabric Softener",
         imageUrl:
           "https://m.media-amazon.com/images/I/71XOlqLIpwL._AC_UL480_QL65_.jpg",
@@ -1422,9 +2365,24 @@ export const shopData = [
         price: 15.0,
         currency: "AED",
         brand: "Downy",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71XOlqLIpwL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81laC0MWONL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/819xBkEAwjL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/712s5TRaLVL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71DEAUsx7BL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71G1fbI7baL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Downy" },
+            { title: "Format", value: "Softener" },
+            { title: "Units", value: "3 litres" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "vyrw876",
         productName: "Persil Power Gel",
         imageUrl:
           "https://m.media-amazon.com/images/I/81ZNU9oWF6L._AC_UL480_QL65_.jpg",
@@ -1434,9 +2392,24 @@ export const shopData = [
         price: 42.5,
         currency: "AED",
         brand: "Persil",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/81ZNU9oWF6L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/813DtZ+8LoL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71srDjECs6L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81vKkbWoe8L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/819iXETNCHL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Persil" },
+            { title: "Format", value: "Gel" },
+            { title: "Units", value: "4 litres" },
+            { title: "Item weight", value: "560g" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "q4gvgm6",
         productName: "Colgate Max Fresh",
         imageUrl:
           "https://m.media-amazon.com/images/I/817GRuNdD7L._AC_UL480_QL65_.jpg",
@@ -1446,9 +2419,23 @@ export const shopData = [
         price: 23.17,
         currency: "AED",
         brand: "Colgate",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/817GRuNdD7L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/616F0MFPCXL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71mXTmt0VPL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Colgate" },
+            { title: "Type", value: "Toothpaste" },
+            { title: "Item weight", value: "30g" },
+            { title: "Format", value: "Gel" },
+            { title: "Type", value: "Toothpaste" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "jzowqkx",
         productName: "Sensodyne ToothPaste",
         imageUrl:
           "https://m.media-amazon.com/images/I/71ALUDSeRbL._AC_UL480_QL65_.jpg",
@@ -1458,9 +2445,20 @@ export const shopData = [
         price: 36.5,
         currency: "AED",
         brand: "Sensodyne",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71ALUDSeRbL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71BiZFvgZvL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61q6C7N6rrL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Sensodyne" },
+            { title: "Type", value: "Toothpaste" },
+          ],
+        },
       },
       {
-        productID: ID(),
+        productID: "c6lyuab",
         productName: "Colgate Zigzag Toothbrush",
         imageUrl:
           "https://m.media-amazon.com/images/I/813YWpTzByL._AC_UL480_QL65_.jpg",
@@ -1470,6 +2468,19 @@ export const shopData = [
         price: 12.2,
         currency: "AED",
         brand: "Colgate",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/813YWpTzByL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/618uMQV9ieL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/616xP3OaNJS._AC_SL1000_.jpg",
+          ],
+          details: [
+            { title: "Colour", value: "Assorted Color" },
+            { title: "Brand", value: "Colgate" },
+            { title: "Item weight", value: "0.48g" },
+            { title: "Item firmness description", value: "Medium" },
+          ],
+        },
       },
     ],
   },
