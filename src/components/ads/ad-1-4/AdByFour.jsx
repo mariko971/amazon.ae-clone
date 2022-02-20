@@ -1,7 +1,7 @@
 import React from "react";
 import "./AdByFour.css";
 
-const AdByFour = ({ title, ads, description }) => {
+const AdByFour = ({ title, ads, description, linkUrl }) => {
   return (
     <div className="ad-info">
       <h2 className="ad-info__title">
@@ -9,7 +9,7 @@ const AdByFour = ({ title, ads, description }) => {
       </h2>
       <div className="byFourAd-info__layout">
         {ads.map((ad, index) => (
-          <a href="/" key={index}>
+          <a href={`${linkUrl}`} key={index}>
             <div className="sm-ad">
               <div
                 className="sm-ad-image"
@@ -23,7 +23,7 @@ const AdByFour = ({ title, ads, description }) => {
         ))}
       </div>
       <div className="ad-info__link sm-ad-link">
-        <a href="/">{description}</a>
+        <a href={`${linkUrl}`}>{description}</a>
       </div>
     </div>
   );

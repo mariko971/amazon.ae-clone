@@ -7,30 +7,30 @@ import {
   increaseItemQtyInCart,
   reduceItemQtyInCart,
   removeFromCart,
+  removeFromBuyCart,
   selectCartItemToBuy,
   deselectCartItemToBuy,
-  totalCartAmount,
-  totalBuyCartItemsQty,
 } from "../../slices/appSlices";
 
 const CartWithItems = ({ item }) => {
-  const buyCartItems = useSelector((state) => state.cart.buyCartItems);
+  const buyCartItems = useSelector((state) => state.buyCart);
   const [isChecked, setIsChecked] = useState(
     buyCartItems.includes(item.productID)
   );
   const dispatch = useDispatch();
 
+  const handleDeleteItem = () => {
+    cartAction(dispatch, removeFromCart, item.productID);
+    cartAction(dispatch, removeFromBuyCart, item.productID);
+  };
+
   const handleChange = () => {
     const productID = item.productID;
     if (!isChecked) {
       dispatch(selectCartItemToBuy(productID));
-      dispatch(totalCartAmount());
-      dispatch(totalBuyCartItemsQty());
       setIsChecked(!isChecked);
     } else {
       dispatch(deselectCartItemToBuy(productID));
-      dispatch(totalCartAmount());
-      dispatch(totalBuyCartItemsQty());
       setIsChecked(!isChecked);
     }
   };
@@ -72,10 +72,7 @@ const CartWithItems = ({ item }) => {
               &#10094;
             </span>
           </span>
-          <span
-            className="cart-item_delete"
-            onClick={() => cartAction(dispatch, removeFromCart, item.productID)}
-          >
+          <span className="cart-item_delete" onClick={() => handleDeleteItem()}>
             Delete
           </span>
         </div>

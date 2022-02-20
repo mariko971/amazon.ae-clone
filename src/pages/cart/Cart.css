@@ -111,6 +111,16 @@
 .cart-promo_container {
   margin-left: auto;
   margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0 15px;
+  height: 420px;
+  width: 350px;
+  background-color: white;
+  z-index: 1;
+  text-align: left;
 }
 
 .cart-items {

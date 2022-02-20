@@ -28,7 +28,7 @@ const SignInPage = () => {
         navigate("/");
       })
       .catch((error) => {
-        console.log(error.message);
+        alert(error.message);
       });
   };
   return (

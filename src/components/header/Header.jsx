@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import "./Header.css";
 import HeaderNav from "./header-nav/Header_nav";
@@ -8,9 +8,28 @@ import HeaderNav from "./header-nav/Header_nav";
 import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import { userSignOut } from "../../firebase/firebase.utils";
+import { clearBuyCart } from "../../slices/appSlices";
+import { persistor } from "../../store";
 
 const Header = ({ currentUser }) => {
-  const cartItemsQty = useSelector((state) => state.cart.totalCartQuantity);
+  const cartItems = currentUser
+    ? currentUser.cart.cartItems
+      ? currentUser.cart.cartItems
+      : []
+    : [];
+
+  const cartItemsQty = cartItems.length
+    ? cartItems.reduce((acc, item) => acc + item.qty, 0)
+    : 0;
+
+  const dispatch = useDispatch();
+
+  const handleSignOut = () => {
+    userSignOut();
+    dispatch(clearBuyCart());
+    persistor.purge();
+  };
+
   return (
     <div className="header" id="top-page">
       <div className="header__nav-main">
@@ -86,7 +105,7 @@ const Header = ({ currentUser }) => {
           </Link>
           <Link
             to={currentUser ? "/" : "/sign-in"}
-            onClick={currentUser ? userSignOut : null}
+            onClick={currentUser ? handleSignOut : null}
           >
             <div className="user__option">
               <span className="user__optionLineOne">
@@ -97,7 +116,7 @@ const Header = ({ currentUser }) => {
               </span>
             </div>
           </Link>
-          <Link to={"/"}>
+          <Link to={"/orders"}>
             <div className="user__option">
               <span className="user__optionLineOne">Returns</span>
               <span className="user__optionLineTwo">& Orders</span>

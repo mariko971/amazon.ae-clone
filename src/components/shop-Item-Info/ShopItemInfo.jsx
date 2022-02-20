@@ -7,7 +7,7 @@ import { starRate, formatPrice, handleAddToCart, getProduct } from "../utils";
 
 const ShopItemInfo = ({ currentUser }) => {
   const { category, productID } = useParams();
-  const shop = useSelector((state) => state.shop);
+  const shop = useSelector((state) => state.appData.shop_Data);
   const dispatch = useDispatch();
 
   const product = getProduct(shop, category, productID);
@@ -90,7 +90,7 @@ const ShopItemInfo = ({ currentUser }) => {
               <button
                 className="addToCart-btn product_options-btn"
                 onClick={() =>
-                  handleAddToCart(dispatch, product, currentUser.id)
+                  handleAddToCart(dispatch, product, currentUser.id, category)
                 }
               >
                 Add to Cart

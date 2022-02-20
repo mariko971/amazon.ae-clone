@@ -1,7 +1,7 @@
 import React from "react";
 import "./AdOneByOne.css";
 
-const AdOneByOne = ({ title, imageUrl, description }) => {
+const AdOneByOne = ({ title, imageUrl, description, linkUrl }) => {
   return (
     <div className="ad-info">
       <h2 className="ad-info__title">
@@ -11,7 +11,7 @@ const AdOneByOne = ({ title, imageUrl, description }) => {
         <img src={imageUrl} alt="" />
       </div>
       <div className="ad-info__link">
-        <a href="/">{description}</a>
+        <a href={`${linkUrl}`}>{description}</a>
       </div>
     </div>
   );

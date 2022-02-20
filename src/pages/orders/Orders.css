@@ -1,0 +1,20 @@
+.orders-wrapper {
+  background-color: #fff;
+}
+
+.orders-container {
+  width: 920px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.orders-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 1rem;
+}
+
+.orders-header h1 {
+  font-size: 28px;
+  margin: 0;
+}

@@ -6,17 +6,18 @@ import { useSelector } from "react-redux";
 
 import AdByFour from "../../components/ads/ad-1-4/AdByFour";
 import CartWithItems from "./CartWithItems";
-import { formatter } from "../../components/utils";
+import { formatter, cart_qty, cart_Amount } from "../../components/utils";
 
 const Cart = ({ currentUser }) => {
-  const cartItems = useSelector((state) => state.cart.cartItems);
-  const totalCartAmount = useSelector((state) => state.cart.totalCartAmount);
-  const totalBuyCartQty = useSelector((state) => state.cart.totalBuyCartQty);
-  const totalCartItemsQty = useSelector(
-    (state) => state.cart.totalCartQuantity
-  );
-  const promoData = useSelector((state) => state.home.ads_Data.promo);
+  const { cartItems } = currentUser.cart;
+
+  const cartQty = cartItems.reduce((acc, item) => acc + item.qty, 0);
+
+  const promoData = useSelector((state) => state.appData.ads_Data.promo);
+  const buyCart = useSelector((state) => state.buyCart);
   const filteredPromoData = promoData.filter((item) => item.type === "byFour");
+  const totalBuyCartQty = cart_qty(buyCart, cartItems);
+  const totalCartAmount = cart_Amount(buyCart, cartItems);
 
   const randomArrItem = (items) =>
     items[Math.floor(Math.random() * items.length)];
@@ -88,10 +89,10 @@ const Cart = ({ currentUser }) => {
                 <p>Select Items</p>
               </div>
               <p id="cart-items_price">Price</p>
-              {cartItems.map((item, i) => (
-                <CartWithItems item={item} key={i} />
+              {cartItems.map((item) => (
+                <CartWithItems item={item} key={item.productID} />
               ))}
-              {totalCartAmount > 0 ? (
+              {buyCart.length > 0 ? (
                 <p className="cart-items_total">
                   {` Subtotal (${totalBuyCartQty} ${
                     totalBuyCartQty > 1 ? "Items" : "Item"
@@ -119,9 +120,9 @@ const Cart = ({ currentUser }) => {
           </div>
         </div>
         <div className="cart__aside">
-          {currentUser && totalCartItemsQty > 0 ? (
+          {currentUser && cartQty > 0 ? (
             <div className="cart__aside-buy">
-              {totalCartAmount > 0 ? (
+              {cartQty > 0 ? (
                 <p className="cart-items_total">
                   {` Subtotal (${totalBuyCartQty} ${
                     totalBuyCartQty > 1 ? "Items" : "Item"
@@ -135,7 +136,9 @@ const Cart = ({ currentUser }) => {
               )}
               <Link
                 to={
-                  currentUser.shippingInfo ? "/buy/checkout" : "/buy/shipping"
+                  currentUser.shippingInfo.country
+                    ? "/buy/checkout"
+                    : "/buy/shipping"
                 }
               >
                 <button

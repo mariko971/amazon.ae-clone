@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./ShopSlider.css";
-import { starRate } from "../utils";
+import { starRate, formatter } from "../utils";
 
 const ShopSlider = ({ categoryData }) => {
   const { category, data } = categoryData;
@@ -23,7 +23,7 @@ const ShopSlider = ({ categoryData }) => {
     <div className="shop_main-products">
       <div className="main-products_header">
         <h2>Best Sellers in {`${category}`}</h2>
-        <Link to={"/"}>See more</Link>
+        <Link to={`/${category}`}>See more</Link>
         <p>
           Page {currentPage} of {totalPages}
         </p>
@@ -51,9 +51,7 @@ const ShopSlider = ({ categoryData }) => {
                 className="slide-item-rating"
                 style={{ backgroundImage: `url(${starRate(item.rating)})` }}
               ></div>
-              <p className="slide-item-price">
-                {item.currency} {item.price}
-              </p>
+              <p className="slide-item-price">{formatter.format(item.price)}</p>
             </li>
           ))}
         </ul>

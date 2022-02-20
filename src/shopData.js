@@ -1424,6 +1424,30 @@ export const shopData = [
         price: 119.25,
         currency: "AED",
         brand: "SoundPEATS",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61jDXJmW6JL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81nxdgum7+L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/612H6QQshTL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Qb8UNWFbL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61y-83EA4OL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71GKthvnC0L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61hgdM3WNNL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "SoundPEATS" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Noise Control", value: "None" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
         productID: "nxn60at",
@@ -1436,6 +1460,29 @@ export const shopData = [
         price: 129.0,
         currency: "AED",
         brand: "Anker",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51hsq3bombL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71yG19NdeUL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71dFiKhUklL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71PEZI42j0L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71oieebfahL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61+lMQIIZFL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Soundcore" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Model Name", value: "Life P2 Mini" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
         productID: "y6ehj8j",
@@ -1448,6 +1495,26 @@ export const shopData = [
         price: 55.35,
         currency: "AED",
         brand: "Xiaomi",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51Upw655zvL._AC_SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51gPTs2GbBL._AC_SL1477_.jpg",
+            "https://m.media-amazon.com/images/I/5100Jsm9YCL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Xiaomi" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wireless",
+            },
+            { title: "Model Name", value: "Earbuds" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
         productID: "325ep8n",
@@ -1460,6 +1527,27 @@ export const shopData = [
         price: 27.0,
         currency: "AED",
         brand: "JBL",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/51sv1xBLGvL._AC_SL1350_.jpg",
+            "https://m.media-amazon.com/images/I/71lrk1MJn7L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41OpkSOx3wL._AC_.jpg",
+            "https://m.media-amazon.com/images/I/41Cy3BZsFcL._AC_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "JBL" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model Name", value: "T110" },
+            { title: "Form factor", value: "In Ear" },
+          ],
+        },
       },
       {
         productID: "5fupgck",
@@ -1472,6 +1560,29 @@ export const shopData = [
         price: 1305.0,
         currency: "AED",
         brand: "Bose",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61UzY7vPUIL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/51QydmrHL6L._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61m41zN0f4L._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61MtnIhvcML._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61XS95-+aFL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/71bkhXYsv9L._AC_SL1200_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Bose" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model Name", value: "794297-0100" },
+            { title: "Form factor", value: "Over Ear" },
+          ],
+        },
       },
       {
         productID: "lyj5htg",
@@ -1484,6 +1595,29 @@ export const shopData = [
         price: 262.9,
         currency: "AED",
         brand: "JBL",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61drMUJ7VZL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/611zte1-OvL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61AaGcxANwL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71GZPV6xOAL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71DeXjP1QfL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61k+jB--G6L._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "JBL" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model Name", value: "T750BTns" },
+            { title: "Form factor", value: "Over Ear" },
+          ],
+        },
       },
       {
         productID: "5me6zc3",
@@ -1496,6 +1630,25 @@ export const shopData = [
         price: 942.9,
         currency: "AED",
         brand: "Beats",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/61w+edOrp9L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61rZWebeCHL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Beats" },
+            {
+              title: "Colour",
+              value: "Grey",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model Name", value: "MRJ82AE/A" },
+            { title: "Form factor", value: "Over Ear" },
+          ],
+        },
       },
       {
         productID: "eguwz4q",
@@ -1508,6 +1661,25 @@ export const shopData = [
         price: 799.0,
         currency: "AED",
         brand: "Sennheiser",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71JHUS7ox1L._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61tcBG0nLuL._AC_SL1200_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Sennheiser" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model Name", value: "PX550-II" },
+            { title: "Form factor", value: "Over Ear" },
+          ],
+        },
       },
       {
         productID: "jrgfiox",
@@ -1520,6 +1692,25 @@ export const shopData = [
         price: 969.0,
         currency: "AED",
         brand: "Sennheiser",
+        productInfo: {
+          infoImages: [
+            "https://m.media-amazon.com/images/I/71CkHZLa6WL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/41eJh2utKkL._AC_SL1500_.jpg",
+          ],
+          details: [
+            { title: "Brand", value: "Sennheiser" },
+            {
+              title: "Colour",
+              value: "Black",
+            },
+            {
+              title: "Connectivity technology",
+              value: "Wired",
+            },
+            { title: "Model Name", value: "M3AEBTXL" },
+            { title: "Form factor", value: "Over Ear" },
+          ],
+        },
       },
     ],
   },

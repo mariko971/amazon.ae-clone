@@ -8,16 +8,14 @@ import CategoryPage from "./CategoryPage";
 
 const ShopCategory = ({ params }) => {
   const dispatch = useDispatch();
-  const shop = useSelector((state) => state.shop);
+  const shop = useSelector((state) => state.appData.shop_Data);
   const filters = useSelector((state) => state.filters);
   const category = params?.category;
-  const categoryArray = shop.shopData.filter(
-    (item) => item.category === category
-  )[0].data;
+  const categoryArray = shop.filter((item) => item.category === category)[0]
+    .data;
   const dat = filteredData(categoryArray, filters);
 
   useEffect(() => {
-    console.log("USE EFFECT RAN");
     return dispatch(resetFilters());
   }, [category, dispatch]);
 

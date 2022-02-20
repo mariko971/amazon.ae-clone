@@ -33,6 +33,12 @@ provider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => signInWithPopup(auth, provider);
 
 export const createCustomerProfile = async (userAuth, someData) => {
+  const cart = {
+    cartItems: [],
+    orders: [],
+  };
+  const shippingInfo = {};
+
   if (!userAuth) return;
   const userRef = doc(db, `customers/${userAuth.uid}`);
   const querySnapshot = await getDoc(userRef);
@@ -46,6 +52,8 @@ export const createCustomerProfile = async (userAuth, someData) => {
         displayName,
         email,
         createdAt,
+        cart,
+        shippingInfo,
         ...someData,
       });
     } catch (error) {
@@ -78,15 +86,62 @@ export const addShippingAddress = async (id, shippingData) => {
   }
 };
 
-export const addToFirebaseCart = async (item, id) => {
+export const addToFirebaseCart = async (arr, id) => {
   const docRef = doc(db, `customers/${id}`);
-  const snapshot = await getDoc(docRef);
-  const data = snapshot.data();
   try {
     await updateDoc(docRef, {
-      cart: [...data.cart, item],
+      "cart.cartItems": arr,
     });
   } catch (error) {
     console.log(error.message);
   }
 };
+
+export const addToFirebaseOrders = async (arr, id) => {
+  const docRef = doc(db, `customers/${id}`);
+  try {
+    await updateDoc(docRef, {
+      "cart.orders": arr,
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+// export const addDataToFirebase = async (ads_Data) => {
+//   const adsDataRef = doc(db, `amazonDB`, "shop_Data");
+//   try {
+//     await setDoc(adsDataRef, {
+//       ...ads_Data,
+//     }).then(() => console.log("done"));
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// };
+
+export const getDataFromDB = async () => {
+  try {
+    const shopDocRef = doc(db, "amazonDB", "shop_Data");
+    const adsDocRef = doc(db, "amazonDB", "ads_Data");
+    const shopSnapshot = await getDoc(shopDocRef).then(
+      (res) => res.data().shop
+    );
+    const adsSnapshot = await getDoc(adsDocRef).then((res) => res.data());
+    console.log(shopSnapshot, adsSnapshot);
+    let data = {
+      ads_Data: adsSnapshot,
+      shop_Data: shopSnapshot,
+    };
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+// const shopSnapshot = await getDoc(shopDocRef).then((res) =>
+// res.data().shop.reduce((acc, prev) => {
+//   acc[prev.category] = prev.data;
+//   return acc;
+// }, {})
+// );

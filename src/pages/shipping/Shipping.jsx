@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Shipping.css";
 import { countryList } from "./shipping.utils";
 import { addShippingAddress } from "../../firebase/firebase.utils";
+import { useNavigate } from "react-router-dom";
 
 const Shipping = ({ currentUser }) => {
-  console.log(currentUser);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     const shippingForm = document.getElementById("shipping-form");
     const shippingInfo = {
       country: shippingForm.country.value,
@@ -20,10 +23,15 @@ const Shipping = ({ currentUser }) => {
       deliveryTime: shippingForm.delivery.value,
       defaultAddress: shippingForm.defaultAddress.checked,
     };
-    console.log(shippingInfo);
-    addShippingAddress(currentUser.id, shippingInfo).then(() => {
-      shippingForm.reset();
-    });
+    try {
+      addShippingAddress(currentUser.id, shippingInfo).then(() => {
+        shippingForm.reset();
+        setIsLoading(false);
+        navigate("/buy/checkout");
+      });
+    } catch (error) {
+      alert(error.message);
+    }
   };
   return (
     <div className="shipping-container">
@@ -105,7 +113,7 @@ const Shipping = ({ currentUser }) => {
             <label htmlFor="defaultAddress">Use as my default address.</label>
           </p>
           <button className="shipping-form-btn" type="submit">
-            Add address
+            {isLoading ? "Loading..." : "Add address"}
           </button>
         </form>
       </div>

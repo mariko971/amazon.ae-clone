@@ -16,6 +16,7 @@ export const ads_Data = {
       imageUrl:
         "https://images-eu.ssl-images-amazon.com/images/G/39/UAE-hq/2021/img/Digital_Devices/AUCC/Devices_GW_DC_AE_brownie_EN._SY304_CB652093412_.jpg",
       description: "Shop Now",
+      linkUrl: "/Speakers",
     },
     {
       type: "byFour",
@@ -43,6 +44,7 @@ export const ads_Data = {
         },
       ],
       description: "See more",
+      linkUrl: "/Health & Personal Care",
     },
     {
       type: "byFour",
@@ -70,6 +72,7 @@ export const ads_Data = {
         },
       ],
       description: "See more offers",
+      linkUrl: "/Health & Personal Care",
     },
     {
       type: "byFour",
@@ -97,6 +100,7 @@ export const ads_Data = {
         },
       ],
       description: "See more",
+      linkUrl: "/Laptops",
     },
     {
       type: "byFour",
@@ -124,6 +128,7 @@ export const ads_Data = {
         },
       ],
       description: "See more",
+      linkUrl: "/Headphones",
     },
     {
       type: "byFour",
@@ -151,6 +156,7 @@ export const ads_Data = {
         },
       ],
       description: "See more",
+      linkUrl: "/",
     },
     {
       type: "byOne",
@@ -158,6 +164,7 @@ export const ads_Data = {
       imageUrl:
         "https://images-eu.ssl-images-amazon.com/images/G/39/AHS_UAE/2021/GW/CC-DC/web_CarRental_dc_1x_260x260._SY304_CB667298652_.jpg",
       description: "Book Now",
+      linkUrl: "/",
     },
     {
       type: "byOne",
@@ -165,6 +172,7 @@ export const ads_Data = {
       imageUrl:
         "https://images-eu.ssl-images-amazon.com/images/G/39/kindle/journeys/ZWI4YjY4MGQt/ZWI4YjY4MGQt-NjMwMjY5N2Ut-w379._SY304_CB641251285_.jpg",
       description: "Shop Now",
+      linkUrl: "/",
     },
   ],
   deals: {

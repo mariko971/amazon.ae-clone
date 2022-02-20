@@ -7,7 +7,7 @@ import AdByFour from "../ads/ad-1-4/AdByFour";
 import ItemsSlider from "../slider multiple-items/ItemsSlider";
 
 const Products = () => {
-  const homeData = useSelector((state) => state.home);
+  const homeData = useSelector((state) => state.appData);
   const { promo, deals, holidayGuide } = homeData.ads_Data;
   return (
     <div className="products-container">
@@ -19,6 +19,7 @@ const Products = () => {
                 title={ad.title}
                 imageUrl={ad.imageUrl}
                 description={ad.description}
+                linkUrl={ad.linkUrl}
               />
             </div>
           ) : (
@@ -27,6 +28,7 @@ const Products = () => {
                 title={ad.title}
                 ads={ad.ads}
                 description={ad.description}
+                linkUrl={ad.linkUrl}
               />
             </div>
           )

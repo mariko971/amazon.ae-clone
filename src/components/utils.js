@@ -1,10 +1,4 @@
-import {
-  addToCart,
-  totalCartAmount,
-  totalCartQty,
-  totalCartItemAmount,
-} from "../slices/appSlices";
-import { addToFirebaseCart } from "../firebase/firebase.utils";
+import { addToCart } from "../slices/appSlices";
 
 export const scrollNext = (id) => {
   const wrapper = document.querySelector(`.slider-${id}`);
@@ -96,28 +90,129 @@ export const formatPrice = (productPrice) => {
   return { currency, value, fraction };
 };
 
-export const handleAddToCart = (dispatch, product, id) => {
-  const { productID, imageUrl, productDescription, price } = product;
+export const handleAddToCart = (dispatch, product, id, category) => {
+  const { productID, price, productDescription, imageUrl } = product;
   const qtyValue = parseInt(document.getElementById("quantity").value);
   const cartItem = {
     productID,
-    imageUrl,
     productDescription,
+    imageUrl,
     price,
     qty: qtyValue,
-    totalAmount: 0,
+    totalAmount: price * qtyValue,
+    url: `/${category}/${productID}`,
   };
-  dispatch(addToCart(cartItem));
-  dispatch(totalCartQty());
-  dispatch(totalCartItemAmount());
-  dispatch(totalCartAmount());
-  addToFirebaseCart(cartItem, id);
+  dispatch(addToCart({ cartItem, id }));
 };
 
 export const getProduct = (shop, category, productID) => {
-  const categoryArray = shop.shopData.filter(
-    (item) => item.category === category
-  )[0].data;
+  const categoryArray = shop.filter((item) => item.category === category)[0]
+    .data;
 
   return categoryArray.filter((item) => item.productID === productID)[0];
+};
+
+export const cart_qty = (cart1, cart2) => {
+  const qtyArr = cart1.map((id) => {
+    const qty = () => {
+      for (let item of cart2) {
+        if (item.productID === id) {
+          return item.qty;
+        }
+      }
+    };
+    return qty();
+  });
+  const buyCartQty = qtyArr.reduce((prev, curr) => prev + curr, 0);
+  return buyCartQty;
+};
+
+export const cart_Amount = (cart1, cart2) => {
+  const qtyArr = cart1.map((id) => {
+    const qty = () => {
+      for (let item of cart2) {
+        if (item.productID === id) {
+          return item.totalAmount;
+        }
+      }
+    };
+    return qty();
+  });
+  const buyCartAmount = qtyArr.reduce((prev, curr) => prev + curr, 0);
+  return buyCartAmount;
+};
+
+// ORDER NUMBER GENERATOR
+
+export function orderNumber(id) {
+  const num = (id) => {
+    const idArr = id.split("");
+    let finalNum = [];
+    for (let i = 0; i < 10; i++) {
+      idArr.map((x) => {
+        if (x === i.toString()) {
+          finalNum.push(i);
+        }
+      });
+    }
+    return finalNum.reduce((acc, en) => acc * en, 1);
+  };
+
+  let now = Date.now().toString();
+  now += now + Math.floor(Math.random() * 10);
+  let lead = now.slice(0, 4);
+
+  return [
+    (parseInt(lead) + num(id)).toString(),
+    now.slice(4, 10),
+    now.slice(10, 14),
+  ].join("-");
+}
+
+// HANDLE ORDER FUNCTION
+
+export const handleOrders = (cartItems, buyCart, id, orders) => {
+  // Extract ordered items from the cart
+  const orderedItems = buyCart.map((id) => {
+    const product = cartItems.find((item) => item.productID === id);
+    return product;
+  });
+
+  const orderAmount = orderedItems.reduce(
+    (acc, prod) => acc + prod.totalAmount,
+    0
+  );
+
+  // Remove ordered items from cart
+  const newCartItems = cartItems.filter(
+    (item) => !buyCart.includes(item.productID)
+  );
+
+  // Get the order date and generate order number.
+  const order_date = new Date().toJSON();
+  const orderDate = new Date(order_date)
+    .toString()
+    .split(" ")
+    .slice(1, 4)
+    .join(" ");
+
+  const order_Number = orderNumber(id);
+
+  // Add the date of the order to the ordered items details
+  const newOrderedItems = orderedItems.map((item) => {
+    return { ...item, orderDate: orderDate };
+  });
+
+  // Add the new order to the database orders array.
+  const newOrders = [
+    ...orders,
+    {
+      orderNumber: order_Number,
+      orderItems: newOrderedItems,
+      orderDate,
+      orderAmount,
+    },
+  ];
+
+  return { newOrders, newOrderedItems, newCartItems, orderDate };
 };

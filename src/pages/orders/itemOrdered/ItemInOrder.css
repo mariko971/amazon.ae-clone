@@ -1,0 +1,29 @@
+.itemOrder-wrapper {
+  border-bottom: 1px #d5d9d9 solid;
+  display: flex;
+  padding: 14px 18px;
+}
+
+.itemOrder-main {
+  padding-left: 14px;
+  flex: 1;
+}
+
+.itemOrder-img {
+  width: 90px;
+  height: 90px;
+  background: no-repeat center/contain;
+}
+
+.itemOrder-description {
+  font-size: 14px;
+}
+
+.itemOrder-wrapper a {
+  color: #007185;
+}
+
+.itemOrder-wrapper a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
