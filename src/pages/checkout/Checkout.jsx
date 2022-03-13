@@ -67,7 +67,7 @@ const Checkout = ({ currentUser }) => {
           <h2>Total {formatter.format(totalAmount)}</h2>
         </div>
         <div className="checkout-btn">
-          <Link to={"/successPage"}>
+          <Link to={"/order-placed"}>
             <button className="checkout-btn">Checkout</button>
           </Link>
         </div>
