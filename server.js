@@ -6,6 +6,8 @@ const app = express();
 app.use(express.static("."));
 app.use(express.json());
 
+const port = process.env.PORT || 5000;
+
 // This is your test secret API key.
 const stripe = require("stripe")(process.env.SECRET_KEY);
 
@@ -36,4 +38,4 @@ app.post("/create-payment-intent", async (req, res) => {
   });
 });
 
-app.listen(5000, () => console.log("Node server listening on port 5000!"));
+app.listen(port, () => console.log("Node server listening on port " + port));
