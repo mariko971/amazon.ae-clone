@@ -7,13 +7,15 @@ import { useSelector } from "react-redux";
 import AdByFour from "../../components/ads/ad-1-4/AdByFour";
 import CartWithItems from "./CartWithItems";
 import { formatter, cart_qty, cart_Amount } from "../../components/utils";
+import { ads_Data } from "../../DATA";
 
 const Cart = ({ currentUser }) => {
   const { cartItems } = currentUser.cart;
 
   const cartQty = cartItems.reduce((acc, item) => acc + item.qty, 0);
 
-  const promoData = useSelector((state) => state.appData.ads_Data.promo);
+  // const promoData = useSelector((state) => state.appData.ads_Data.promo);
+  const promoData = ads_Data.promo;
   const buyCart = useSelector((state) => state.buyCart);
   const filteredPromoData = promoData.filter((item) => item.type === "byFour");
   const totalBuyCartQty = cart_qty(buyCart, cartItems);

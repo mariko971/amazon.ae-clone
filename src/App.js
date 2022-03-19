@@ -72,8 +72,6 @@ function App() {
     isLoading && fetchData();
   }, [dispatch, isLoading]);
 
-  console.log(currentUser);
-
   return (
     <div className="App">
       {isLoading ? (

@@ -7,10 +7,12 @@
 @font-face {
   font-family: AmazonReg;
   src: url("./App-fonts/amazonember_rg-webfont.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: AmazonBold;
   src: url("./App-fonts/amazonember_bd-webfont.woff");
+  font-display: swap;
 }
 
 body {

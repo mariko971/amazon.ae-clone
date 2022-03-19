@@ -15,7 +15,6 @@ const ShopSlider = ({ categoryData }) => {
     indexOfFirstProduct,
     indexOfLastProduct
   );
-  console.log(currentProducts);
 
   const totalPages = Math.ceil(slicedData.length / postsPerPage);
 

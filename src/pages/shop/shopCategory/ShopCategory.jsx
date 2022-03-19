@@ -5,10 +5,12 @@ import "./ShopCategory.css";
 import { filteredData } from "../../../components/utils";
 import { resetFilters } from "../../../slices/appSlices";
 import CategoryPage from "./CategoryPage";
+import { shopData } from "../../../shopData";
 
 const ShopCategory = ({ params }) => {
   const dispatch = useDispatch();
-  const shop = useSelector((state) => state.appData.shop_Data);
+  // const shop = useSelector((state) => state.appData.shop_Data);
+  const shop = shopData;
   const filters = useSelector((state) => state.filters);
   const category = params?.category;
   const categoryArray = shop.filter((item) => item.category === category)[0]

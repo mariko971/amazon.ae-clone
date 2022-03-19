@@ -10,7 +10,6 @@ const Checkout = ({ currentUser }) => {
   const totalAmount = cart_Amount(buyCartItems, cartItems);
 
   const { shippingInfo } = currentUser;
-  console.log(buyCartItems);
   return (
     <>
       <div className="checkout-container">

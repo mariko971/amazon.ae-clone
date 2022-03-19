@@ -5,9 +5,13 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { starRate, formatPrice, handleAddToCart, getProduct } from "../utils";
 
+import { shopData } from "../../shopData";
+
 const ShopItemInfo = ({ currentUser }) => {
   const { category, productID } = useParams();
-  const shop = useSelector((state) => state.appData.shop_Data);
+  // const shop = useSelector((state) => state.appData.shop_Data);
+  const shop = shopData;
+
   const dispatch = useDispatch();
 
   const product = getProduct(shop, category, productID);

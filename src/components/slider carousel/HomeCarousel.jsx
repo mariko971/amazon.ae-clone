@@ -2,6 +2,15 @@ import React from "react";
 import "./HomeCarousel.css";
 import { ads_Data } from "../../DATA";
 
+const carouselUrl = [
+  "/assets/carousel/auto_SX3000_.jpg",
+  "/assets/carousel/beauty_SX3000_.jpg",
+  "/assets/carousel/beauty-week_SX3000_.jpg",
+  "/assets/carousel/citi_SX3000_.jpg",
+  "/assets/carousel/men_SX3000_.jpg",
+  "/assets/carousel/toy_SX3000_.jpg",
+];
+
 const HomeCarousel = () => {
   const { carouselUrls } = ads_Data;
   return (
@@ -11,7 +20,7 @@ const HomeCarousel = () => {
       data-bs-ride="carousel"
     >
       <div className="carousel-inner">
-        {carouselUrls.map((imageUrl, index) => {
+        {carouselUrl.map((imageUrl, index) => {
           const active = "active";
           return (
             <div
