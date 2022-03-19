@@ -150,7 +150,7 @@ export const ads_Data = {
     {
       type: "byOne",
       title: "Rent your car here",
-      imageUrl: "assets/adOne/web_CarRental_adone.jpg",
+      imageUrl: "assets/adOne/web_CarRental_adOne.jpg",
       description: "Book Now",
       linkUrl: "/",
     },
