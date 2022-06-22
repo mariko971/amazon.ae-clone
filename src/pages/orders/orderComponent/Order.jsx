@@ -11,20 +11,24 @@ const Order = ({ order, name }) => {
       <div className="order-container">
         <div className="order-header">
           <div className="order-date">
-            <span className="order-title">ORDER PLACED</span>
-            <span className="order-title-detail">{`${orderDate}`}</span>
+            <p className="order-title">ORDER PLACED</p>
+            <p className="order-title-detail">{`${orderDate}`}</p>
           </div>
           <div className="order-total">
-            <span className="order-title">TOTAL AMOUNT </span>
-            <span className="order-title-detail">{` ${formatter.format(
+            <p className="order-title">TOTAL AMOUNT </p>
+            <p className="order-title-detail">{` ${formatter.format(
               orderAmount
-            )}`}</span>
+            )}`}</p>
           </div>
-          <div className="order-shipTo">
-            <span className="order-title">SHIP TO </span>
-            <span className="order-title-detail">{` ${name}`}</span>
+          {/* <div className="order-shipTo">
+            <p className="order-title">SHIP TO </p>
+            <p className="order-title-detail">{` ${name}`}</p>
+          </div> */}
+          <div className="order-number">
+            <p className="order-title">ORDER#</p>
+            <p className="order-title-detail">{` ${orderNumber}`}</p>
+            {/* ORDER # {` ${orderNumber}`} */}
           </div>
-          <div className="order-number">ORDER # {` ${orderNumber}`}</div>
         </div>
         <div className="orderItem-wrapper">
           {orderItems.map((item) => (

@@ -10,7 +10,7 @@
   display: flex;
   color: #ffff;
   font-family: AmazonReg Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: clamp(0.8rem, 0.63rem + 0.258vw, 0.875rem);
   align-items: center;
 }
 
@@ -19,7 +19,7 @@
   color: #ffff;
   padding: 3px 9px;
   letter-spacing: 0.25px;
-  margin: 5px 0 6px 0;
+  margin: 0;
 }
 
 .prime {
@@ -63,4 +63,22 @@
 .header-nav-link:hover,
 .header-nav__menu:hover {
   border: 1px solid #ffff;
+}
+
+@media (max-width: 1360px) {
+  .header-nav__benefits {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-nav__menu {
+    display: none;
+  }
+  .header-nav__links a {
+    white-space: nowrap;
+  }
+  .header-nav__links {
+    overflow-x: scroll;
+  }
 }

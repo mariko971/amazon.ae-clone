@@ -9,12 +9,13 @@ const AdByFour = ({ title, ads, description, linkUrl }) => {
       </h2>
       <div className="byFourAd-info__layout">
         {ads.map((ad, index) => (
-          <a href={`${linkUrl}`} key={index}>
+          <a href={`${linkUrl}`} key={index} id="sm-ad">
             <div className="sm-ad">
-              <div
+              <img src={ad.imageUrl} alt="" />
+              {/* <div
                 className="sm-ad-image"
-                style={{ background: `url(${ad.imageUrl}) center` }}
-              ></div>
+                style={{ background: `url(${ad.imageUrl})` }}
+              ></div> */}
               <div className="sm-ad-description">
                 <p>{ad.description}</p>
               </div>

@@ -2,8 +2,7 @@ import React from "react";
 import "./ShopItem.css";
 import { Link } from "react-router-dom";
 
-import { starRate } from "../utils";
-import { formatter } from "../utils";
+import { starRate, formatter, truncate } from "../utils";
 
 const ShopItem = ({ category, item, i }) => {
   return (
@@ -15,7 +14,9 @@ const ShopItem = ({ category, item, i }) => {
         ></div>
       </Link>
       <Link to={item.productID}>
-        <p className="category-item-description">{item.productDescription}</p>
+        <p className="category-item-description">
+          {truncate(item.productDescription, 15)}
+        </p>
       </Link>
       <div
         className="category-item-rating"

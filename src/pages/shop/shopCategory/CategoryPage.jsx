@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ShopFilter } from "../../../components/filters";
+import ShopFilter from "../../../components/filters/ShopFilter";
 import ShopItem from "../../../components/shopItem/ShopItem";
 
 const CategoryPage = ({ categoryArray, params, dat }) => {

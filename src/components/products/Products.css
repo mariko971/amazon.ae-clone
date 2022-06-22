@@ -27,9 +27,42 @@
   align-items: center;
   justify-content: flex-end;
   padding: 20px 0 15px;
-  height: 420px;
+  height: min(min-content, 420px);
   width: 350px;
   background-color: white;
   z-index: 1;
   text-align: left;
+}
+
+@media (max-width: 1440px) {
+  .ad-container {
+    width: min(24%, 330px);
+  }
+}
+
+@media (max-width: 1240px) {
+  .ad-container {
+    width: min(32%, 350px);
+  }
+  .area1 {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 940px) {
+  .ad-container {
+    width: min(48%, 430px);
+  }
+}
+
+@media (max-width: 768px) {
+  .area1 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .ad-container {
+    width: clamp(300px, 90%, 450px);
+  }
 }

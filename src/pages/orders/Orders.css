@@ -3,7 +3,7 @@
 }
 
 .orders-container {
-  width: 920px;
+  width: min(90vw, 920px);
   margin: 0 auto;
   text-align: left;
 }
@@ -14,7 +14,22 @@
   margin-bottom: 1rem;
 }
 
-.orders-header h1 {
+.orders-title {
+  margin-bottom: 8px;
   font-size: 28px;
-  margin: 0;
+  font-weight: bold;
+}
+
+.orders-shippedTo {
+  color: #565959;
+  margin-bottom: 0;
+}
+
+@media (max-width: 375px) {
+  .orders-title {
+    font-size: 20px;
+  }
+  .orders-shippedTo {
+    font-size: 13px;
+  }
 }

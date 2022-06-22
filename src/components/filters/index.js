@@ -1,9 +1,0 @@
-export { default as FashionFilter } from "./FashionFilter";
-export { default as LaptopsFilter } from "./LaptopsFilter";
-export { default as GeneralFilter } from "./GeneralFilter";
-export { default as MobilePhonesFilter } from "./MobilePhonesFilter";
-export { default as TabletsFilter } from "./TabletsFilter";
-export { default as TvsFilter } from "./TvsFilter";
-export { default as AsideCheckbox } from "./AsideCheckbox";
-export { default as CustomerReviewFilter } from "./CustomerReviewFilter";
-export { default as ShopFilter } from "./ShopFilter";

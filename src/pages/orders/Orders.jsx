@@ -12,7 +12,8 @@ const Orders = ({ currentUser }) => {
     <div className="orders-wrapper">
       <div className="orders-container">
         <div className="orders-header">
-          <h1>Your orders</h1>
+          <h1 className="orders-title">Your orders</h1>
+          <p className="orders-shippedTo">Shipped To: {fullName}</p>
         </div>
         {orders.map((order) => (
           <Order order={order} name={fullName} key={order.orderNumber} />

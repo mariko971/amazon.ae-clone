@@ -34,8 +34,9 @@ const ShopItemInfo = lazy(() =>
 
 function App() {
   const dispatch = useDispatch();
-  const isLoading = useSelector((state) => state.isLoading);
+  // const isLoading = useSelector((state) => state.isLoading);
   const currentUser = useSelector((state) => state.user);
+  const isLoading = false;
 
   useEffect(() => {
     let unsubscribeFromAuth = onAuthStateChanged(auth, async (user) => {

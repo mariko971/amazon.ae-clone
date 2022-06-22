@@ -193,3 +193,23 @@
   padding: 0 7.2px;
   margin: 0;
 }
+
+@media (max-width: 830px) {
+  .footer-last__container,
+  .footer__nav,
+  .copyright-section a {
+    display: none;
+  }
+}
+
+@media (max-width: 515px) {
+  .amz-logo {
+    display: none;
+  }
+  .language {
+    margin: 0;
+  }
+  .language-location {
+    justify-content: space-around;
+  }
+}

@@ -27,3 +27,13 @@
   color: #c7511f;
   text-decoration: underline;
 }
+
+@media (max-width: 375px) {
+  .itemOrder-description {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .itemOrder-qty {
+    font-size: 14px;
+  }
+}

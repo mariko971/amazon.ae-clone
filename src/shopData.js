@@ -96,7 +96,7 @@ export const shopData = [
       {
         productID: "vgf8lc",
         prodyctName: "Skechers Backpack",
-        imageUrl: "/assets/shop/910CwIXDRXL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/910CwIXDRXL._AC_UL480_FMwebp_QL65_.webp",
         productDescription: "Skechers Unisex-adult BACKPACK BACKPACK",
         rating: 3.0,
         price: 63.5,
@@ -107,7 +107,7 @@ export const shopData = [
       {
         productID: "5x2hur",
         prodyctName: "Skechers Messenger Bag",
-        imageUrl: "/assets/shop/81Py0mSD+DL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/81Py0mSD+DL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Skechers Messenger Bag For Unisex-Adult Black - S359",
         rating: 4.0,
@@ -119,7 +119,7 @@ export const shopData = [
       {
         productID: "j8rrx",
         prodyctName: "Skechers Messenger Bag",
-        imageUrl: "/assets/shop/A1jT2nGrByL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/A1jT2nGrByL._AC_UL480_FMwebp_QL65_.webp",
         productDescription: "Skechers S363-38 Unisex Messenger Bag, Grey",
         rating: 4.0,
         price: 73.64,
@@ -130,7 +130,7 @@ export const shopData = [
       {
         productID: "nct5p",
         prodyctName: "Skechers Backpack",
-        imageUrl: "/assets/shop/81KwPQjkkuL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/81KwPQjkkuL._AC_UL480_FMwebp_QL65_.webp",
         productDescription: "Skechers 2 Compartments Backpack Black",
         rating: 3.5,
         price: 98.82,
@@ -141,7 +141,7 @@ export const shopData = [
       {
         productID: "i65v3",
         prodyctName: "Swarovski Necklace",
-        imageUrl: "/assets/shop/71GR7C-d-pL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71GR7C-d-pL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "SWAROVSKI Women's Symbolic Jewelry Collection, Rhodium Finish, Multi-Colored Crystals",
         rating: 5.0,
@@ -191,7 +191,7 @@ export const shopData = [
       {
         productID: "dmgiv",
         prodyctName: "ASUS ZenBook 13",
-        imageUrl: "/assets/shop/71krHTRvglL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71krHTRvglL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "ASUS ZenBook 13 OLED UX325EA-OLED001T (Pine Grey)- 11th Gen Intel Core i7 CPU,16GB RAM LPDDR4X, Intel Iris Xe Graphics,1TB SSD, 13.3-inch OLED, Windows 10, Backlit-Eng-Arb-KB",
         rating: 4.5,
@@ -223,7 +223,7 @@ export const shopData = [
       {
         productID: "5oraqn",
         prodyctName: "Lenovo Thinkbook 15",
-        imageUrl: "/assets/shop/41dx9Mp9TXL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/41dx9Mp9TXL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "2021 Latest Lenovo Thinkbook 15 Gen 2 11th Gen Core I7-1165G7 Upto 4.7Ghz 15.6 FHD 220NIts Anti Glare Display 8GB 1TB HDD Bluetooth Webcam with ThinkShutter English Keyboard WIN10 PRO Mineral Grey",
         rating: 4.0,
@@ -255,7 +255,7 @@ export const shopData = [
       {
         productID: "orl3vp",
         prodyctName: "Lenovo IdeaPad 3",
-        imageUrl: "/assets/shop/61cjgSurDdS._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/61cjgSurDdS._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Lenovo IdeaPad 3 15 Inch Laptop intel core i3 1005G1 8GB Memory 256GB SSD",
         rating: 4.5,
@@ -287,7 +287,7 @@ export const shopData = [
       {
         productID: "ur3v33",
         prodyctName: "Acer Aspire 5",
-        imageUrl: "/assets/shop/41ErRwcJ0OS._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/41ErRwcJ0OS._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "2021 Acer Aspire 5 Slim Laptop, A515-56-36UT, 15.6 Full HD Display,11th Gen Intel Core i3-1115G4 CPU (Beat i5-8265U), WiFi 6, Amazon Alexa, Windows 10 Home (S Mode) (8GB|256GB SSD)",
         rating: 1.0,
@@ -383,7 +383,7 @@ export const shopData = [
       {
         productID: "plxrw5",
         prodyctName: "Acer Nitro 5 Gaming",
-        imageUrl: "/assets/shop/71dT+SyIpWL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71dT+SyIpWL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Acer Nitro5 Gaming NB AMD Ryzen5-4600H/8GB DDR4/1TB HDD+256GB SSD/4GB Nvidia GTX1650/15.6 FHD IPS/Win10-WiFi-6+Gaming Headset+Mouse Pad- Arabic&English Keyboard-One year warranty by Acer call 8004711",
         rating: 3.5,
@@ -586,7 +586,7 @@ export const shopData = [
       {
         productID: "6ly9tp",
         prodyctName: "Lenovo Tab M8",
-        imageUrl: "/assets/shop/513tmuYpH9L._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/513tmuYpH9L._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Lenovo Tab M8 HD 2ND GEN (TB-8505F), 8 inch Tablet, MediaTek Helio A22 Processor, 2GB RAM, 16GB Storage, WiFi, Android OS, Iron Grey - [ZA5G0115AE]",
         rating: 4.0,
@@ -614,7 +614,7 @@ export const shopData = [
       {
         productID: "p58wf9",
         prodyctName: "Lenovo Tab M10",
-        imageUrl: "/assets/shop/71MDku1iKgL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71MDku1iKgL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Lenovo Tab M10 (TB-X505X), 10.1 inch Tablet, Qualcomm Snapdragon 429 Processor, 2GB RAM, 32GB Storage, WiFi+4G LTE, Android OS, Slate Black - [ZA4K0026AE]",
         rating: 3.5,
@@ -703,7 +703,7 @@ export const shopData = [
       {
         productID: "sf6gye",
         prodyctName: "Microsoft Surface GO 2",
-        imageUrl: "/assets/shop/610F-2TJaCL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/610F-2TJaCL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Microsoft Surface GO 2 10 Inch Tablet PC Silver Intel, Windows 10 Home in S Mode, 2020 Model, Device Only, 1901, Core M3 Wifi, 8GB, 128GB SSD",
         rating: 4.5,
@@ -732,7 +732,7 @@ export const shopData = [
       {
         productID: "2lfrk1",
         prodyctName: "Microsoft Surface GO 2",
-        imageUrl: "/assets/shop/61JuOxNsHtL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/61JuOxNsHtL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Microsoft Surface GO 2 [STV-00005], Tablet-PC, Intel Pentium Gold 4425Y Processor, 4GB RAM, 64GB eMMC, 10.5 inch, Intel UHD Graphics 615, Win10 S Mode, WiFi, Platinum [Middle East Version]",
         rating: 4.5,
@@ -761,7 +761,7 @@ export const shopData = [
       {
         productID: "t8p4j",
         prodyctName: "Samsung Galaxy Book",
-        imageUrl: "/assets/shop/71GXjvnIlcL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71GXjvnIlcL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Samsung Galaxy Book 12 Tablet - Intel Core i5-7200U, 12 Inch,128GB, 4GB RAM, 4G LTE, Windows 10 Home, Silver with En Keyboard Black and S Pen",
         rating: 4.0,
@@ -1100,7 +1100,7 @@ export const shopData = [
       {
         productID: ID(),
         productName: "OPPO Reno6",
-        imageUrl: "/assets/shop/81yGsmHeOYL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/81yGsmHeOYL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "OPPO Reno6 5G Dual SIM Smartphone 128GB 8GB RAM, 65W Super VOOC Flash Charge, 90Hz Display, 5G Mobile Phone Unlocked (UAE Version) Aurora + OPPO True Wireless + Mobile Stand",
         rating: 3.0,
@@ -1128,7 +1128,7 @@ export const shopData = [
       {
         productID: ID(),
         productName: "Google Pixel 6",
-        imageUrl: "/assets/shop/71SsBCLDt9L._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71SsBCLDt9L._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Google Pixel 6 - Unlocked Android 5G Smartphone with 50 Megapixel Camera and Wide-Angle Lens - 128 GB - Stormy Black",
         rating: 3.0,
@@ -1595,7 +1595,7 @@ export const shopData = [
       {
         productID: "eguwz4q",
         productName: "Seinnheiser PXC 550-II",
-        imageUrl: "/assets/shop/71JHUS7ox1L._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71JHUS7ox1L._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Sennheiser PXC 550-II Wireless – NoiseGard Adaptive Noise Cancelling, Bluetooth Headphone with Touch Sensitive Control and 30-Hour Battery Life",
         rating: 4.5,
@@ -1625,7 +1625,7 @@ export const shopData = [
       {
         productID: "jrgfiox",
         productName: "Seinnheiser M3AEBTXL",
-        imageUrl: "/assets/shop/71CkHZLa6WL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71CkHZLa6WL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Sennheiser M3AEBTXL Momentum Wireless Noise Cancelling Headphones With Auto On/Off, Smart Pause Functionality And Smart Control App - Black",
         rating: 4.5,
@@ -1927,7 +1927,7 @@ export const shopData = [
       {
         productID: "macvc7c",
         productName: "Samsung 40T5300 FHD",
-        imageUrl: "/assets/shop/51jt+E8besL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/51jt+E8besL._AC_UL480_FMwebp_QL65_.webp",
         productDescription: "SAMSUNG 40 Inch FHD Smart TV 40T5300, UA40T5300AU",
         rating: 4.0,
         price: 1105.0,
@@ -1956,7 +1956,7 @@ export const shopData = [
       {
         productID: "00k970w",
         productName: "Hisense FHD",
-        imageUrl: "/assets/shop/51W6yZxMlbL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/51W6yZxMlbL._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Hisense 43 Inch TV FHD Smart TV, With Dolby Vision HDR, DTS Virtual X, YouTube, Netflix, Freeview Play &amp; Alexa Built-in, Bluetooth &amp; WiFi Black Model 43A4GTUK -1 Year Full Warranty.",
         rating: 4.0,
@@ -1992,7 +1992,7 @@ export const shopData = [
       {
         productID: "21pe76u",
         productName: "Sony Bravia XR X90J",
-        imageUrl: "/assets/shop/71YKL-RtchS._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/71YKL-RtchS._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Sony 65 Inch BRAVIA XR X90J Full Array LED Smart Google TV, 4K Ultra HD High Dynamic Range HDR, XR-65X90J, 2021 Model",
         rating: 4.0,
@@ -2241,7 +2241,7 @@ export const shopData = [
       {
         productID: "1uesjg2",
         productName: "Edifier Studio Speaker R1280Db",
-        imageUrl: "/assets/shop/913SI3UTzTL._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/913SI3UTzTL._AC_UL480_FMwebp_QL65_.webp",
         productDescription: "Edifier Studio Bookshelf Speaker Black R1280Db Bk",
         rating: 4.5,
         price: 471.0,
@@ -2270,7 +2270,7 @@ export const shopData = [
       {
         productID: "x3rap47",
         productName: "Edifier Studio speaker S100oMKii",
-        imageUrl: "/assets/shop/618nqC0xiML._AC_UL480_FMwebp_QL65_.jpg",
+        imageUrl: "/assets/shop/618nqC0xiML._AC_UL480_FMwebp_QL65_.webp",
         productDescription:
           "Edifier Studio Bookshelf Speaker Brown S1000Mkii Bn",
         rating: 4.5,

@@ -3,41 +3,34 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
   padding: 0 20px;
 }
 
 .byFourAd-info__layout {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 2px;
-  column-gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
 }
+
 .byFourAd-info__layout a {
   color: #000;
 }
 
 .ad-info__title {
-  font-size: 21px;
+  font-size: clamp(1.2rem, 2vw, 1.31rem);
   line-height: 27.3px !important;
   margin-bottom: 10px;
 }
 
-.sm-ad-image {
-  height: 102px;
-  width: 162px;
+.sm-ad img {
+  width: 100%;
 }
 
-.sm-ad-image {
-  display: flex;
-  flex-direction: column;
-  width: 141px;
-  height: 115px;
-  background-color: red;
-  background-position: center;
-  background-size: cover;
-}
-
-.sm-ad-description {
+.sm-ad-description p {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
   font-size: 12px;
 }
 
@@ -46,11 +39,32 @@
 }
 
 .sm-ad-link {
-  margin: 0;
+  margin-top: 5px;
 }
 
 .ad-info__link a {
   text-decoration: none;
   color: #007185;
   font-size: 13px;
+}
+
+@media (max-width: 630px) {
+  .ad-info {
+    justify-content: space-evenly;
+  }
+  .sm-ad-image {
+    height: 185px;
+  }
+  .ad-info__link a {
+    font-size: 16px;
+  }
+  .sm-ad-description p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 530px) {
+  .sm-ad-link {
+    margin-top: 15px;
+  }
 }

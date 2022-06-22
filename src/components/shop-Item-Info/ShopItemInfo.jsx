@@ -1,7 +1,7 @@
 import React from "react";
 import "./ShopItemInfo.css";
 import { useParams } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { starRate, formatPrice, handleAddToCart, getProduct } from "../utils";
 
@@ -32,45 +32,47 @@ const ShopItemInfo = ({ currentUser }) => {
         />
       </header>
       <section className="shopItemInfo_product">
-        <div className="shopItemInfo_product-image">
-          <ul className="product_image-thumbnails">
-            {product.productInfo.infoImages.map((image, i) => (
-              <li
-                className="product_image-thumbnail"
-                style={{
-                  backgroundImage: `url(${image})`,
-                }}
-                onMouseOver={() => handleMouseOver(image)}
-                key={i}
-              ></li>
-            ))}
-          </ul>
-          <div
-            className="product_image-thumbnails-big"
-            style={{
-              backgroundImage: `url(${product.imageUrl})`,
-            }}
-          ></div>
-        </div>
-        <div className="shopItemInfo_product-details">
-          <p className="shopItemInfo_product-description">
-            {product.productDescription}
-          </p>
-          <div
-            className="shopItemInfo_product-rating"
-            style={{ backgroundImage: `url(${starRate(product.rating)})` }}
-          ></div>
-          <div className="shopItemInfo_product-info">
-            <table className="product-info-table">
-              <tbody>
-                {product.productInfo.details.map((row, i) => (
-                  <tr className="product-info-row" key={i}>
-                    <td className="product-info_title">{row.title}</td>
-                    <td className="product-info_value">{row.value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <div className="shopItemInfo_product-detail-wrapper">
+          <div className="shopItemInfo_product-image">
+            <ul className="product_image-thumbnails">
+              {product.productInfo.infoImages.map((image, i) => (
+                <li
+                  className="product_image-thumbnail"
+                  style={{
+                    backgroundImage: `url(${image})`,
+                  }}
+                  onMouseOver={() => handleMouseOver(image)}
+                  key={i}
+                ></li>
+              ))}
+            </ul>
+            <div
+              className="product_image-thumbnails-big"
+              style={{
+                backgroundImage: `url(${product.imageUrl})`,
+              }}
+            ></div>
+          </div>
+          <div className="shopItemInfo_product-details">
+            <p className="shopItemInfo_product-description">
+              {product.productDescription}
+            </p>
+            <div
+              className="shopItemInfo_product-rating"
+              style={{ backgroundImage: `url(${starRate(product.rating)})` }}
+            ></div>
+            <div className="shopItemInfo_product-info">
+              <table className="product-info-table">
+                <tbody>
+                  {product.productInfo.details.map((row, i) => (
+                    <tr className="product-info-row" key={i}>
+                      <td className="product-info_title">{row.title}</td>
+                      <td className="product-info_value">{row.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div className="shopItemInfo_product-options">

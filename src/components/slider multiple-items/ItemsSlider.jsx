@@ -1,6 +1,6 @@
 import React from "react";
 import "./ItemsSlider.css";
-import { scrollNext, scrollBack } from "../utils";
+import { scrollNext, scrollBack, formatter } from "../utils";
 
 const ItemsSlider = ({ deals, id }) => {
   const { title, link, collection } = deals;
@@ -25,11 +25,16 @@ const ItemsSlider = ({ deals, id }) => {
           {collection.map((deal, index) => (
             <a href="/" className="slides-wrapper__link" key={index}>
               <div className="slider-item">
-                <div className="slider-item__img">
-                  <img src={deal.imageUrl} alt="" />
+                <div
+                  className="slider-item__img"
+                  style={{ backgroundImage: `url(${deal.imageUrl})` }}
+                >
+                  {/* <img src={deal.imageUrl} alt="" /> */}
                 </div>
                 {deal.currency && deal.priceRange ? (
-                  <p className="price">{`${deal.currency} ${deal.priceRange.from} - ${deal.priceRange.to}`}</p>
+                  <p className="slider-item__price">{`${formatter.format(
+                    deal.priceRange.from
+                  )} - ${formatter.format(deal.priceRange.to)}`}</p>
                 ) : null}
               </div>
             </a>

@@ -172,7 +172,7 @@ export const ads_Data = {
         currency: "AED",
       },
       {
-        imageUrl: "h/assets/deals/I/41UUWCEbZ+L._AC_SY200_.jpg",
+        imageUrl: "/assets/deals/41UUWCEbZ+L._AC_SY200_.jpg",
         priceRange: { from: 51.17, to: 93.21 },
         currency: "AED",
       },
@@ -237,17 +237,7 @@ export const ads_Data = {
         currency: "AED",
       },
       {
-        imageUrl: "/assets/deals/31NRAjl5JeL._AC_SY200_.jpg",
-        priceRange: { from: 238.0, to: null },
-        currency: "AED",
-      },
-      {
-        imageUrl: "/assets/deals/3193tNFJW2L._AC_SY200_.jpg",
-        priceRange: { from: 12.0, to: 604.61 },
-        currency: "AED",
-      },
-      {
-        imageUrl: "/assets/deals41Vio5oe0bS._AC_SY200_.jpg",
+        imageUrl: "/assets/deals/41Vio5oe0bS._AC_SY200_.jpg",
         priceRange: { from: 6.96, to: 261.41 },
         currency: "AED",
       },
@@ -277,7 +267,7 @@ export const ads_Data = {
       },
       {
         imageUrl:
-          "/assets/collection/Homepage/XCM_Manual_1396400_4365609_UAE_HGG21_AE_GW_Bubbler_Home_Gift_Guide_EN_400x400_2X._CB652043867_.jpg",
+          "/assets/collection/XCM_Manual_1396400_4365609_UAE_HGG21_AE_GW_Bubbler_Home_Gift_Guide_EN_400x400_2X._CB652043867_.jpg",
       },
       {
         imageUrl:

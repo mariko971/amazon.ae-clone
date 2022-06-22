@@ -1,6 +1,6 @@
 .carousel-control-prev,
 .carousel-control-next {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   height: 200px;
 }
 
@@ -16,4 +16,11 @@
 
 .carousel-control-next:hover .carousel-control-next-icon {
   background-color: #2f4f4f;
+}
+
+@media (min-width: 1240px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 50px;
+  }
 }

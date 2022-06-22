@@ -2,12 +2,12 @@ import { addToCart } from "../slices/appSlices";
 
 export const scrollNext = (id) => {
   const wrapper = document.querySelector(`.slider-${id}`);
-  wrapper.scrollLeft += 1400;
+  wrapper.scrollLeft += wrapper.offsetWidth;
 };
 
 export const scrollBack = (id) => {
   const wrapper = document.querySelector(`.slider-${id}`);
-  wrapper.scrollLeft -= 1400;
+  wrapper.scrollLeft -= wrapper.offsetWidth;
 };
 
 export const starRate = (rating) => {
@@ -69,9 +69,9 @@ export const formatter = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 2,
 });
 
-export function truncate(str) {
-  return str.split(" ").length > 28
-    ? str.split(" ").slice(0, 28).join(" ") + "..."
+export function truncate(str, l = 28) {
+  return str.split(" ").length > l
+    ? str.split(" ").slice(0, l).join(" ") + "..."
     : str;
 }
 
@@ -149,7 +149,7 @@ export function orderNumber(id) {
     const idArr = id.split("");
     let finalNum = [];
     for (let i = 0; i < 10; i++) {
-      idArr.map((x) => {
+      idArr.forEach((x) => {
         if (x === i.toString()) {
           finalNum.push(i);
         }
@@ -215,4 +215,84 @@ export const handleOrders = (cartItems, buyCart, id, orders) => {
   ];
 
   return { newOrders, newOrderedItems, newCartItems, orderDate };
+};
+
+export const getShopFilters = (categoryArray, params) => {
+  const catArray = [];
+  const brandsArr = [];
+
+  categoryArray.map(
+    (item) => !brandsArr.includes(item.brand) && brandsArr.push(item.brand)
+  );
+  catArray.push({
+    filterArr: brandsArr,
+    filterName: "brand",
+    filtertitle: "Brand",
+  });
+
+  if (params.category === "Mobile Phones") {
+    const storageArr = [];
+    categoryArray.map(
+      (item) =>
+        !storageArr.includes(item.storage) && storageArr.push(item.storage)
+    );
+    catArray.push({
+      filterArr: storageArr,
+      filterName: "storage",
+      filtertitle: "Internal Memory Size",
+    });
+  } else if (params.category === "Tvs") {
+    const screenSizeArr = [];
+    categoryArray.map(
+      (item) =>
+        !screenSizeArr.includes(item.screenSize) &&
+        screenSizeArr.push(item.screenSize)
+    );
+    catArray.push({
+      filterArr: screenSizeArr,
+      filterName: "screenSize",
+      filtertitle: "By Screen Size",
+    });
+  } else if (params.category === "Tablets") {
+    const osArr = [];
+    categoryArray.map(
+      (item) => !osArr.includes(item.OS) && osArr.push(item.OS)
+    );
+    catArray.push({
+      filterArr: osArr,
+      filterName: "OS",
+      filtertitle: "Operating System",
+    });
+  } else if (params.category === "Laptops") {
+    const memoryArr = [];
+    categoryArray.map(
+      (item) => !memoryArr.includes(item.memory) && memoryArr.push(item.memory)
+    );
+    catArray.push({
+      filterArr: memoryArr,
+      filterName: "memory",
+      filtertitle: "Installed RAM",
+    });
+
+    const CPUArr = [];
+    categoryArray.map(
+      (item) => !CPUArr.includes(item.CPU) && CPUArr.push(item.CPU)
+    );
+    catArray.push({
+      filterArr: CPUArr,
+      filterName: "CPU",
+      filtertitle: "CPU Type",
+    });
+  } else if (params.category === "Fashion") {
+    const genderArr = [];
+    categoryArray.map(
+      (item) => !genderArr.includes(item.gender) && genderArr.push(item.gender)
+    );
+    catArray.push({
+      filterArr: genderArr,
+      filterName: "gender",
+      filtertitle: "Gender",
+    });
+  }
+  return catArray;
 };

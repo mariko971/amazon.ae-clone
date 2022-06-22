@@ -1,74 +1,42 @@
 import React from "react";
 
-import {
-  MobilePhonesFilter,
-  TvsFilter,
-  GeneralFilter,
-  TabletsFilter,
-  LaptopsFilter,
-  FashionFilter,
-} from "../../components/filters";
+import CatFilter from "./CatFilter";
+import CustomerReviewFilter from "./CustomerReviewFilter";
+import "./ShopFilter.css";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import CloseIcon from "@material-ui/icons//Close";
+import { getShopFilters } from "../utils";
 
 const ShopFilter = ({ categoryArray, params }) => {
-  // const [cat, setCat] = useState();
-  // const categry = params.category;
+  const catArray = getShopFilters(categoryArray, params);
 
-  // useEffect(() => {
-  //   setCat(categoryArray);
-  // }, [categoryArray]);
+  const filterBody = document.querySelector(".shop-category_aside-body");
 
-  const brandsArr = [];
-  categoryArray.map(
-    (item) => !brandsArr.includes(item.brand) && brandsArr.push(item.brand)
-  );
-
-  const storageArr = [];
-  categoryArray.map(
-    (item) =>
-      !storageArr.includes(item.storage) && storageArr.push(item.storage)
-  );
-
-  const screenSizeArr = [];
-  categoryArray.map(
-    (item) =>
-      !screenSizeArr.includes(item.screenSize) &&
-      screenSizeArr.push(item.screenSize)
-  );
-
-  const osArr = [];
-  categoryArray.map((item) => !osArr.includes(item.OS) && osArr.push(item.OS));
-
-  const memoryArr = [];
-  categoryArray.map(
-    (item) => !memoryArr.includes(item.memory) && memoryArr.push(item.memory)
-  );
-
-  const CPUArr = [];
-  categoryArray.map(
-    (item) => !CPUArr.includes(item.CPU) && CPUArr.push(item.CPU)
-  );
-
-  const genderArr = [];
-  categoryArray.map(
-    (item) => !genderArr.includes(item.gender) && genderArr.push(item.gender)
-  );
+  const toggleFilter = () => {
+    filterBody.style.left = "0";
+    document.body.style.setProperty("overflow", "hidden");
+  };
+  const closeFilter = () => {
+    filterBody.style.left = "-110%";
+    document.body.style.setProperty("overflow", "initial");
+  };
 
   return (
     <div className="shop-category_aside">
-      <GeneralFilter brandsArr={brandsArr} />
-      {params.category === "Mobile Phones" ? (
-        <MobilePhonesFilter storageArr={storageArr} />
-      ) : params.category === "Tvs" ? (
-        <TvsFilter screenSizeArr={screenSizeArr} />
-      ) : params.category === "Tablets" ? (
-        <TabletsFilter osArr={osArr} />
-      ) : params.category === "Laptops" ? (
-        <LaptopsFilter memoryArr={memoryArr} CPUArr={CPUArr} />
-      ) : params.category === "Fashion" ? (
-        <FashionFilter genderArr={genderArr} />
-      ) : (
-        ""
-      )}
+      <h4 className="shop-category_aside-title" onClick={() => toggleFilter()}>
+        Filter by:
+        <ArrowRightIcon id="shopFilter-arrowRight" />
+      </h4>
+      <div className="shop-category_aside-body">
+        <CloseIcon id="shopFilter-close" onClick={() => closeFilter()} />
+        <CustomerReviewFilter />
+        {catArray.map((filterObj, i) => (
+          <CatFilter
+            filterObj={filterObj}
+            key={`${filterObj.filterName}${i}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

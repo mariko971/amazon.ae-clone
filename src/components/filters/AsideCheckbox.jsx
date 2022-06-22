@@ -8,11 +8,9 @@ const AsideCheckbox = ({ filter, filterArrName }) => {
 
   const handleOnChange = (e, fil) => {
     if (isChecked === false) {
-      console.log(isChecked);
       setIsChecked(!isChecked);
       dispatch(filterBy({ filter: fil, value: e.target.value }));
     } else {
-      console.log(isChecked);
       dispatch(removeFilter({ filter: fil, value: e.target.value }));
       setIsChecked(!isChecked);
     }

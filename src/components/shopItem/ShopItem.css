@@ -2,3 +2,59 @@
   text-decoration: none;
   color: black;
 }
+
+.category-item {
+  width: 90%;
+  justify-self: center;
+}
+
+.category-item:not(:last-child) {
+  border-bottom: solid 1px #ccc;
+}
+
+.category-item-img {
+  display: flex;
+  width: 100%;
+  height: clamp(250px, 20vw, 308px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.category-item-description {
+  margin: 16px 0 0 0;
+  color: #0f1111;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+.category-item-rating {
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  margin: 7px 0;
+  margin-left: 15px;
+}
+
+.category-item-price {
+  font-family: AmazonBold;
+}
+
+.category-item-description,
+.category-item-price {
+  padding: 0 15px;
+}
+
+@media (max-width: 515px) {
+  .category-item-img {
+    height: clamp(350px, 20vw, 400px);
+  }
+  .category-item-description {
+    font-size: clamp(0.9rem, 4vw, 1rem);
+  }
+}
+
+@media (max-width: 375px) {
+  .category-item-img {
+    height: clamp(250px, 20vw, 400px);
+  }
+}

@@ -23,3 +23,57 @@
   z-index: 1;
   margin: 0 5px;
 }
+
+@media (max-width: 1440px) {
+  .home__container {
+    margin-bottom: -300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .home__container {
+    margin-bottom: -280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home__container {
+    margin-bottom: -260px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .home__container {
+    margin-bottom: -240px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home__container {
+    margin-bottom: -220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home__container {
+    margin-bottom: -200px;
+  }
+}
+
+@media (max-width: 940px) {
+  .home__container {
+    margin-bottom: -170px;
+  }
+}
+
+@media (max-width: 850px) {
+  .home__container {
+    margin-bottom: -160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__container {
+    display: none;
+  }
+}
