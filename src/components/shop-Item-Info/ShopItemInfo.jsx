@@ -9,7 +9,6 @@ import { shopData } from "../../shopData";
 
 const ShopItemInfo = ({ currentUser }) => {
   const { category, productID } = useParams();
-  // const shop = useSelector((state) => state.appData.shop_Data);
   const shop = shopData;
 
   const dispatch = useDispatch();
@@ -22,7 +21,6 @@ const ShopItemInfo = ({ currentUser }) => {
   };
 
   const price = formatPrice(product.price);
-
   return (
     <div className="shopItemInfo-container">
       <header className="shopItemInfo_header">
@@ -34,18 +32,23 @@ const ShopItemInfo = ({ currentUser }) => {
       <section className="shopItemInfo_product">
         <div className="shopItemInfo_product-detail-wrapper">
           <div className="shopItemInfo_product-image">
-            <ul className="product_image-thumbnails">
-              {product.productInfo.infoImages.map((image, i) => (
-                <li
-                  className="product_image-thumbnail"
-                  style={{
-                    backgroundImage: `url(${image})`,
-                  }}
-                  onMouseOver={() => handleMouseOver(image)}
-                  key={i}
-                ></li>
-              ))}
-            </ul>
+            {product.productInfo ? (
+              <ul className="product_image-thumbnails">
+                {product.productInfo.infoImages.map((image, i) => (
+                  <li
+                    className="product_image-thumbnail"
+                    style={{
+                      backgroundImage: `url(${image})`,
+                    }}
+                    onMouseOver={() => handleMouseOver(image)}
+                    key={i}
+                  ></li>
+                ))}
+              </ul>
+            ) : (
+              ""
+            )}
+
             <div
               className="product_image-thumbnails-big"
               style={{
@@ -61,18 +64,22 @@ const ShopItemInfo = ({ currentUser }) => {
               className="shopItemInfo_product-rating"
               style={{ backgroundImage: `url(${starRate(product.rating)})` }}
             ></div>
-            <div className="shopItemInfo_product-info">
-              <table className="product-info-table">
-                <tbody>
-                  {product.productInfo.details.map((row, i) => (
-                    <tr className="product-info-row" key={i}>
-                      <td className="product-info_title">{row.title}</td>
-                      <td className="product-info_value">{row.value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            {product.productInfo ? (
+              <div className="shopItemInfo_product-info">
+                <table className="product-info-table">
+                  <tbody>
+                    {product.productInfo.details.map((row, i) => (
+                      <tr className="product-info-row" key={i}>
+                        <td className="product-info_title">{row.title}</td>
+                        <td className="product-info_value">{row.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
         <div className="shopItemInfo_product-options">

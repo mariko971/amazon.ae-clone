@@ -22,9 +22,9 @@
   padding: 0 15px;
 }
 
-/* .shopItemInfo_product-image {
-  align-items: center;
-} */
+.shopItemInfo_product-image {
+  height: 100%;
+}
 
 .product_image-thumbnails {
   padding-left: 1rem;

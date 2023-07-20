@@ -9,7 +9,6 @@ import { shopData } from "../../../shopData";
 
 const ShopCategory = ({ params }) => {
   const dispatch = useDispatch();
-  // const shop = useSelector((state) => state.appData.shop_Data);
   const shop = shopData;
   const filters = useSelector((state) => state.filters);
   const category = params?.category;
