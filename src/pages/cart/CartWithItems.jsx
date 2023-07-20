@@ -37,47 +37,54 @@ const CartWithItems = ({ item }) => {
 
   return (
     <div className="cart-items_main">
-      <span>
-        <input
-          type="checkbox"
-          checked={isChecked}
-          value={[item.productID, item.totalAmount]}
-          onChange={handleChange}
-        />
-      </span>
-      <span className="cart-item_img">
-        <img src={item.imageUrl} alt="product" />
-      </span>
-      <span className="cart-item_info">
-        <h3>{truncate(item.productDescription)}</h3>
-        <p className="cart-item_info-txt">Eligible for Free delivery</p>
-        <div className="cart-item_qty">
-          <span className="cart-item_qty-label">Qty:</span>
-          <span className="cart-item_qty-qty">{item.qty}</span>
-          <span className="cart-item_qty-arrows">
-            <span
-              className="cart-item_qty-up"
-              onClick={() =>
-                cartAction(dispatch, increaseItemQtyInCart, item.productID)
-              }
-            >
-              &#10094;
+      <div className="cart-image-wrapper">
+        <span>
+          <input
+            type="checkbox"
+            checked={isChecked}
+            value={[item.productID, item.totalAmount]}
+            onChange={handleChange}
+          />
+        </span>
+        <span className="cart-item_img">
+          <img src={item.imageUrl} alt="product" />
+        </span>
+      </div>
+      <div className="cart-item-wrapper">
+        <span className="cart-item_info">
+          <h3>{truncate(item.productDescription, 13)}</h3>
+          <p className="cart-item_info-txt">Eligible for Free delivery</p>
+          <div className="cart-item_qty">
+            <span className="cart-item_qty-label">Qty:</span>
+            <span className="cart-item_qty-qty">{item.qty}</span>
+            <span className="cart-item_qty-arrows">
+              <span
+                className="cart-item_qty-up"
+                onClick={() =>
+                  cartAction(dispatch, increaseItemQtyInCart, item.productID)
+                }
+              >
+                &#10094;
+              </span>
+              <span
+                className="cart-item_qty-dwn"
+                onClick={() =>
+                  cartAction(dispatch, reduceItemQtyInCart, item.productID)
+                }
+              >
+                &#10094;
+              </span>
             </span>
             <span
-              className="cart-item_qty-dwn"
-              onClick={() =>
-                cartAction(dispatch, reduceItemQtyInCart, item.productID)
-              }
+              className="cart-item_delete"
+              onClick={() => handleDeleteItem()}
             >
-              &#10094;
+              Delete
             </span>
-          </span>
-          <span className="cart-item_delete" onClick={() => handleDeleteItem()}>
-            Delete
-          </span>
-        </div>
-      </span>
-      <span className="cart-item_value">{formatter.format(item.price)}</span>
+          </div>
+        </span>
+        <span className="cart-item_value">{formatter.format(item.price)}</span>
+      </div>
     </div>
   );
 };

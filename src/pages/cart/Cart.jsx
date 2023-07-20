@@ -8,13 +8,14 @@ import AdByFour from "../../components/ads/ad-1-4/AdByFour";
 import CartWithItems from "./CartWithItems";
 import { formatter, cart_qty, cart_Amount } from "../../components/utils";
 import { ads_Data } from "../../DATA";
+import CartTotal from "./cart-total";
 
 const Cart = ({ currentUser }) => {
   const { cartItems } = currentUser.cart;
 
   const cartQty = cartItems.reduce((acc, item) => acc + item.qty, 0);
+  const shippingInfo = currentUser.shippingInfo.country;
 
-  // const promoData = useSelector((state) => state.appData.ads_Data.promo);
   const promoData = ads_Data.promo;
   const buyCart = useSelector((state) => state.buyCart);
   const filteredPromoData = promoData.filter((item) => item.type === "byFour");
@@ -108,7 +109,14 @@ const Cart = ({ currentUser }) => {
               )}
             </div>
           )}
-
+          <CartTotal
+            props={{
+              cartQty,
+              totalBuyCartQty,
+              totalCartAmount,
+              shippingInfo,
+            }}
+          />
           <div className="cart-footer">
             <p>
               The price and availability of items at Amazon.ae are subject to
@@ -123,34 +131,14 @@ const Cart = ({ currentUser }) => {
         </div>
         <div className="cart__aside">
           {currentUser && cartQty > 0 ? (
-            <div className="cart__aside-buy">
-              {cartQty > 0 ? (
-                <p className="cart-items_total">
-                  {` Subtotal (${totalBuyCartQty} ${
-                    totalBuyCartQty > 1 ? "Items" : "Item"
-                  }): `}
-                  <span id="cart-items_total">
-                    {formatter.format(totalCartAmount)}
-                  </span>
-                </p>
-              ) : (
-                <p className="cart-items_total">No items selected</p>
-              )}
-              <Link
-                to={
-                  currentUser.shippingInfo.country
-                    ? "/buy/checkout"
-                    : "/buy/shipping"
-                }
-              >
-                <button
-                  className="cart__aside-buy-btn"
-                  disabled={totalBuyCartQty === 0}
-                >
-                  Proceed to Buy
-                </button>
-              </Link>
-            </div>
+            <CartTotal
+              props={{
+                cartQty,
+                totalBuyCartQty,
+                totalCartAmount,
+                shippingInfo,
+              }}
+            />
           ) : null}
           <div className="cart-promo_container ad-container">
             <AdByFour
