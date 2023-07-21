@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+.App {
+  max-width: 1500px;
+  width: 100vw;
+  margin-inline: auto;
+}
+
 @media screen and(min-width: 1440px) {
   body {
     background-color: black;
