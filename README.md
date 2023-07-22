@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://mariko-amazon-clone.herokuapp.com/](https://mariko-amazon-clone.herokuapp.com/)
+- Live Site URL: [https://mariko-amazon-clone.netlify.app/](https://mariko-amazon-clone.netlify.app/)
 
 ## My process
 
