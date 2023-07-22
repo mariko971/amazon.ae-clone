@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AdOneByOne.css";
 
 const AdOneByOne = ({ title, imageUrl, description, linkUrl }) => {
@@ -11,7 +12,7 @@ const AdOneByOne = ({ title, imageUrl, description, linkUrl }) => {
         <img src={imageUrl} alt="" />
       </div>
       <div className="ad-info__link">
-        <a href={`${linkUrl}`}>{description}</a>
+        <Link to={`${linkUrl}`}>{description}</Link>
       </div>
     </div>
   );
